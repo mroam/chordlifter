@@ -54,7 +54,7 @@ public class TextyTextTest
     }
     
     
-
+/*     * * * Silly to test this unless we know what the user is going to insert. Need to mock up!
     @Test
     public void userText()
     {
@@ -62,6 +62,7 @@ public class TextyTextTest
         banjo.askUserForText();   // I put in by hand: (with quotes) "sometimes\nmelancholy leaves me breathless"
         assertEquals("sometimes\nmelancholy leaves me breathless", banjo.getText());
     }
+*/
 }
 
 
