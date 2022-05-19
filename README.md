@@ -1,10 +1,7 @@
 # chordlifter
 For text songs. Adjust locations of chords in song lyrics: within or floating above.
 
-
-------------------------------------------------------------------------
-This is the project README file. 
-------------------------------------------------------------------------
+[Example picture](https://github.com/mroam/chordlifter/blob/main/chordlifter-samples.png)
 
 PROJECT TITLE: Pretty Print guitar chords
 
@@ -30,7 +27,9 @@ LiveCode's string handling: figuring "word" and "item" and "line"
 
 [ ] Block setText( ) so it doesn't take just anything
 
-[ ] Bring in the chord tests from classroom. 
+[ ] Bring in the chord tests from classroom.
+
+[ ] Consider having separate folders for "starter" and "answer-key" versions.
 
 
 # Ideas
