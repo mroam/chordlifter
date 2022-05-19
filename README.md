@@ -21,10 +21,16 @@ LiveCode's string handling: figuring "word" and "item" and "line"
 
 
 # TODO:
-[ ] use bluej's example of file reader for TextyText.getTextFromFile( )
-[ ] build more tests of TextyText (and stop using the one that does dialogs?)
-[ ] make tests of "word" "line" and "char"
-[ ] block some setText, don't take just anything
+
+[ ] Use bluej's example of file reader for TextyText.getTextFromFile( )
+
+[ ] Build more tests of TextyText (and stop using the one that does dialogs?)
+
+[ ] Make tests of "word" "line" and "char"
+
+[ ] Block setText( ) so it doesn't take just anything
+
+[ ] Bring in the chord tests from classroom. 
 
 
 # Ideas
