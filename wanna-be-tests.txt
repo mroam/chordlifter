@@ -1,0 +1,54 @@
+Strings for Java Tests, could be used for flatToLifted and liftedToFlat:
+
+/*
+Tests for guitar music chord lifter
+*/
+
+
+// one line song, starts with chord:
+String myLiftedSongDots = "^D..............A7..^D\nDon't sit under the apple tree with"
+String myLiftedSong     = "^D              A7  ^D\nDon't sit under the apple tree with"
+String myFlatSong = "{^D} Don't sit under {A7} the {^D} apple tree with"
+
+
+// two line song, second line NOT starting with chord:
+String myLiftedSongDots = "^D..............A7\nDon't sit under the\n........^D\nbig old apple tree with";
+String myLiftedSong     = "^D              A7\nDon't sit under the\n        ^D\nbig old apple tree with";
+String myFlatSong = "{^D} Don't sit under {A7} the\nbig old {^D} apple tree with";
+
+
+// chordbunch is wider than the words they float above
+String myLiftedSongDots = "C Am F G.C\nhi ......bye";   // yes, "hi" gets space beforeDots
+String myLiftedSong     = "C Am F G C\nhi       bye";
+String myFlatSong = "{C Am F G} hi {C} bye";
+
+
+// two line song, both 1st & 2nd lines start with lyrics NOT chords  
+String myLiftedSongDots = "......^D........A7\nDon't sit under the........^D\nbig old apple tree with";
+String myLiftedSong     = "      ^D        A7\nDon't sit under the        ^D\nbig old apple tree with";
+String myFlatSong = "Don't {^D} sit under {A7} the\nbig old {^D} apple tree with";
+
+
+// one line song that starts with lyric
+String myLiftedSongDots = "......^D........A7..^D\nDon't sit under the apple tree with";
+String myLiftedSong     = "      ^D        A7  ^D\nDon't sit under the apple tree with";
+String myFlatSong = "Don't {^D} sit under {A7} the {^D} apple tree with";
+
+
+// one line example, with chord that doesn't have spaces around it
+String myLiftedSongDots = ".....^D\nDon'tsit";
+String myLiftedSong     = "     ^D\nDon'tsit";
+String myFlatSong = "Don't{^D}sit";
+
+
+// two line example, with chords above one and two spaces
+String myLiftedSongDots = ".......^D\nDon't  sit\n......Am\nUnder the";
+String myLiftedSong     = "       ^D\nDon't  sit\n      Am\nUnder the";
+String myFlatSong = "Don't {^D} sit\nUnder {Am}The";
+
+
+
+// 
+String myLiftedSongDots = "";
+String myLiftedSong     = "";
+String myFlatSong = "";
