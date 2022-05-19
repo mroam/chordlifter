@@ -1,11 +1,7 @@
 # chordlifter
 For text songs. Adjust locations of chords in song lyrics: within or floating above.
 
-[Example picture](https://github.com/mroam/chordlifter/blob/main/chordlifter-samples.png)
-
-PROJECT TITLE: Pretty Print guitar chords
-
-PURPOSE OF PROJECT: demo at Milton Academy
+[See example picture](https://github.com/mroam/chordlifter/blob/main/chordlifter-samples.png)
 
 VERSION or DATE: 2022 May 18
 
