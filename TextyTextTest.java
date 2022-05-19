@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 /**
  * The test class TextyTextTest.
  *
- * @author  (your name)
- * @version (a version number or a date)
+ * @author  Mike Roam
+ * @version 2022 May 19
  */
 public class TextyTextTest
 {
