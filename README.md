@@ -27,7 +27,7 @@ LiveCode's string handling: figuring "word" and "item" and "line"
 
 [ ] Block setText( ) so it doesn't take just anything
 
-[ ] Bring in the chord tests from classroom.
+[ ] Turn [wanna-be-tests](https://github.com/mroam/chordlifter/blob/main/wanna-be-tests.txt) into real tests!
 
 [ ] Consider having separate folders for "starter" and "answer-key" versions.
 
