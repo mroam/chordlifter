@@ -19,7 +19,8 @@ import java.util.Optional;
 /**
  * Working for BlueJ and IntelliJ, May 2022, on macos 12.4
  * From
- * <a href="https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/</a>
+ * <a href="https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">
+ * https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/</a>
  */
 public class TextDialogExample   extends Application {
 

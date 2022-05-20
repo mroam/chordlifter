@@ -43,7 +43,7 @@ Kinds of data we could track: who sings which verse, which instruments play whic
 
 
 # Things to decide: 
-if [Am Bm} are in one bracket, is that one chord or two???
+if {Am Bm} are in one bracket enclosure, is that one "chord" or two???
 
 ( c d e fh )
 
