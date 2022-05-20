@@ -1,7 +1,6 @@
 # chordlifter
 For text songs. Adjust locations of chords in song lyrics: within or floating above.
 
-https://github.com/mroam/chordlifter/blob/main/project-desc/survive-simple-flat.txt
 [See example picture](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.png) 
 or compare "[flat](https://github.com/mroam/chordlifter/blob/main/project-desc/survive-simple-flat.txt)" 
 vs "[Lifted](https://github.com/mroam/chordlifter/blob/main/project-desc/survive-simple-lifted.txt)" 
@@ -9,13 +8,13 @@ versions of a song.
 
 VERSION or DATE: 2022 May 20
 
-HOW TO START THIS PROJECT: Run tests! Works in intelliJ & BlueJ. 
-To see the TextDialogExample 
+HOW TO START THIS PROJECT: Run tests! (It works in IntelliJ & BlueJ.)
+To see the TextDialogExample...
 
 -- in BlueJ, right click TextDialogExample & "Run JavaFX Application" 
 (the "new TextDialogExample" doesn't seem to work May 2022).
 
--- In IntelliJ tell the terminal: java TextDialogExample
+-- IntelliJ has stopped compiling it (javac TextDialogExample.java) but BlueJ can compile it. It used to work to tell the IntelliJ's terminal: java TextDialogExample
 
 AUTHORS: Mike, with ideas from Cole, Sadie, Jia, Max, & Desi
 
@@ -34,6 +33,8 @@ LiveCode's string handling so we can ask for "word" I, or "item" J, or "line" K.
 [ ] Turn [wanna-be-tests](https://github.com/mroam/chordlifter/blob/main/wanna-be-tests.txt) into real tests!
 
 [ ] Consider having separate folders (branches!?) for "starter" and "answer-key" versions.
+
+[ ] Revise example picture and all code to use {Chord} rather than [Chord].
 
 
 # Ideas
