@@ -32,7 +32,7 @@ LiveCode's string handling so we can ask for "word" I, or "item" J, or "line" K.
 
 [ ] Turn [wanna-be-tests](https://github.com/mroam/chordlifter/blob/main/wanna-be-tests.txt) into real tests!
 
-[ ] Consider having separate folders for "starter" and "answer-key" versions.
+[ ] Consider having separate folders (branches!?) for "starter" and "answer-key" versions.
 
 
 # Ideas
