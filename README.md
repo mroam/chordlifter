@@ -1,9 +1,10 @@
 # chordlifter
 For text songs. Adjust locations of chords in song lyrics: within or floating above.
 
-[See example picture](https://github.com/mroam/chordlifter/blob/main/chordlifter-samples.png) 
-or compare "[flat](https://github.com/mroam/chordlifter/blob/main/survive-simple-flat.txt)" 
-vs "[Lifted](https://github.com/mroam/chordlifter/blob/main/survive-simple-lifted.txt)" 
+https://github.com/mroam/chordlifter/blob/main/project-desc/survive-simple-flat.txt
+[See example picture](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.png) 
+or compare "[flat](https://github.com/mroam/chordlifter/blob/main/project-desc/survive-simple-flat.txt)" 
+vs "[Lifted](https://github.com/mroam/chordlifter/blob/main/project-desc/survive-simple-lifted.txt)" 
 versions of a song.
 
 VERSION or DATE: 2022 May 20
