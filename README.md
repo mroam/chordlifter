@@ -9,6 +9,7 @@ versions of a song.
 VERSION or DATE: 2022 May 20
 
 HOW TO START THIS PROJECT: Run tests! (It works in IntelliJ & BlueJ.)
+
 To see the TextDialogExample...
 * in BlueJ, right click TextDialogExample & "Run JavaFX Application" 
 (the "new TextDialogExample" doesn't seem to work May 2022).
@@ -16,7 +17,7 @@ To see the TextDialogExample...
 
 AUTHORS: Mike, with ideas from Cole, Sadie, Jia, Max, & Desi
 
-USER INSTRUCTIONS: Current focus is trying to get TextyText to be like
+USER INSTRUCTIONS: Current focus is trying to get [TextyText.java](https://github.com/mroam/chordlifter/blob/main/Texty-is-focus/TextyText.java) to be like
 LiveCode's string handling so we can ask for "word" I, or "item" J, or "line" K.
 
 
