@@ -1,8 +1,8 @@
 # chordlifter
-For text songs. Adjust locations of chords in song lyrics: within or floating above.
+For musicians: adjust locations of chords in text file song lyrics: within or floating above.
 
 [See example picture](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.png) 
-or compare "[Flat](https://github.com/mroam/chordlifter/blob/main/project-desc/survive-simple-flat.txt)" 
+or compare "[Flat](../main/project-desc/survive-simple-flat.txt)" 
 vs "[Lifted](../main/project-desc/survive-simple-lifted.txt)" 
 versions of a song.
 
