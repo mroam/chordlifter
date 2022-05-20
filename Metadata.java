@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Metadata here.
+ * Lots of potential Metadata to keep track of, including songstyles, copyright, and style preferences.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Mike Roam
+ * @version 2022 May 19
  * 
  *  Text could have info about what format it is in: smooshed or lifted,
  * and which version of our data.
@@ -13,6 +13,7 @@ public class Metadata
 {
     // instance variables - replace the example below with your own
     private int x;
+    // Cole is using a HashMap of enum keys and info strings...
 
     /**
      * Constructor for objects of class Metadata

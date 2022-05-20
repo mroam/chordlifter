@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Boss here.
+ * "Boss" contains the main( ) for chordlifter
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Mike Roam
+ * @version 2022 May 19
  */
 public class Boss
 {
@@ -20,13 +20,13 @@ public class Boss
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Note: running tests is also a good thing to do instead of running main
      */
     public static void main( String[] args )
     {
         System.out.println("Hello, World!");
+        for ( /* every */ String s : /* in */ args){
+            System.out.println(s);
+        }
     }
 }

@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Song here.
+ * Holding lines of music AND metadata
  *
- * @author (your name)
- * @version (2022 Jan 27)
+ * @author Mike Roam
+ * @version 2022 May 19
  * 
  * This is not just a simple text song, it is probably a tree of somekind.
  */
@@ -25,12 +25,8 @@ public class Song
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     * 
      * Idea: pop up a text or file dialog to get some text.
+     * (See example of archaic JDialogBox in TextyText.
      * Text could have info about what format it is in: smooshed or lifted,
      * and which version of our data.
      * And specifications about whether brackets prefer spaces around them.
@@ -42,10 +38,7 @@ public class Song
     } // getText( )
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * perhaps pretty print or karaoke
      */
     public String play( )
     {
@@ -58,17 +51,13 @@ public class Song
     
     /**
      * spit out a version of the song in which chords are on the line above
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
      */
     public String makeLineRaised(  )
     {
-        // put your code here
+        // somebody could throw a LineSmooshed into the lifter and get LineFancy
+        // either us or the Boss main?
         return "   [Am]\nhi   bob";
     }
-
-    
     
     
 }  // class Song

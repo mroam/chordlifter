@@ -1,14 +1,20 @@
 
 /**
- * Write a description of class LineFancy here.
+ * Holds chords and lyrics separately
+ * in separate lines. There are several ways
+ * to do this: currently trying to have two
+ * parallel arrays of Strings, with each array item
+ * counting as a line of text.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Mike Roam
+ * @version 2022 May 19
  */
 public class LineFancy
 {
     // instance variables - replace the example below with your own
-    private int x;
+    String[] chordLines;
+    String[] lyricLines;
+    int currLine = 1;  // beware OBOB
 
     /**
      * Constructor for objects of class LineFancy
@@ -16,18 +22,14 @@ public class LineFancy
     public LineFancy()
     {
         // initialise instance variables
-        x = 0;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * appending a chord will require lengthening the lyricLines also to stay matched.
      */
-    public int sampleMethod(int y)
+    public void appendChord( String newChord )
     {
-        // put your code here
-        return x + y;
+        // err: chordLines[currLine].append( newChord );
+        chordLines[currLine] += newChord;
     }
 }

@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class LineSmooshed here.
+ *  LineSmooshed has chords interspersed within lyrics, e.g. "{Am} At first I was afraid..."
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Mike Roam
+ * @version 2022 May 19
  */
 public class LineSmooshed
 {
