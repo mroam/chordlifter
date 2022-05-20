@@ -3,18 +3,16 @@ For text songs. Adjust locations of chords in song lyrics: within or floating ab
 
 [See example picture](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.png) 
 or compare "[flat](https://github.com/mroam/chordlifter/blob/main/project-desc/survive-simple-flat.txt)" 
-vs "[Lifted](https://github.com/mroam/chordlifter/blob/main/project-desc/survive-simple-lifted.txt)" 
+vs "[Lifted](../blob/main/project-desc/survive-simple-lifted.txt)" 
 versions of a song.
 
 VERSION or DATE: 2022 May 20
 
 HOW TO START THIS PROJECT: Run tests! (It works in IntelliJ & BlueJ.)
 To see the TextDialogExample...
-
--- in BlueJ, right click TextDialogExample & "Run JavaFX Application" 
+* in BlueJ, right click TextDialogExample & "Run JavaFX Application" 
 (the "new TextDialogExample" doesn't seem to work May 2022).
-
--- IntelliJ has stopped compiling it (javac TextDialogExample.java) but BlueJ can compile it. It used to work to tell the IntelliJ's terminal: java TextDialogExample
+* IntelliJ has stopped compiling it (javac TextDialogExample.java) but BlueJ can compile it. It used to work to tell the IntelliJ's terminal: java TextDialogExample
 
 AUTHORS: Mike, with ideas from Cole, Sadie, Jia, Max, & Desi
 
@@ -57,8 +55,10 @@ if {Am Bm} are in one bracket enclosure, is that one "chord" or two???
 
 
 
-# New Learning: 
-blueJ didn't at first run the ChordTest that intelliJ had made,
+# Ah-hah!
+
+* BlueJ didn't at first run the ChordTest that intelliJ had made,
 and didn't stick it to Chord class until I told blueJ to make its own ChordTest. 
 BlueJ squawked about it existing already, and moved the intelliJ test into position.
-IntelliJ doesn't import as much for its tests, and has to specify longer prefixes.
+* IntelliJ doesn't import as much for its tests, and has to specify longer prefixes.
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
