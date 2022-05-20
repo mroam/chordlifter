@@ -83,6 +83,10 @@ public class TextyText {
      import javafx.scene.control.*
      */
     public void askJavaFXUserForText() {
+        /* Don't run this yet, gets "Error: uninitialized .."
+        which implies to me that we don't have a running javaFX thing yet.
+        Maybe the "TextDialogExample" can show how to do this. */
+        /*
         TextInputDialog dialog = new TextInputDialog("line1/nline2");
         dialog.setTitle("my text asker");
         dialog.setHeaderText("Enter some text, or use default value.");
@@ -95,6 +99,7 @@ public class TextyText {
         }
         // manipulates the Dialog: actionStatus.setText("Text entered: " + entered);
         this.setText( entered );
+        */
     }
 
     /**
@@ -182,9 +187,14 @@ public class TextyText {
     {
         String[] theLines = myText.split( "/n" );
         /* if myLines were merely array of String, we'd be done. */
-        /* The trick in the next line is the cast. See
+        /* The trick in the next line is the cast. Oops, compiles but doesn't work. See
         * https://beginnersbook.com/2015/05/java-string-to-arraylist-conversion/ */
-        myLines = (ArrayList<String>) Arrays.asList( theLines );
+        // myLines = (ArrayList<String>) Arrays.asList( theLines );
+        myLines.clear( );  // faster than ArrayList.removeAll() but leaves nulls.
+        for (String aLine : theLines) {
+        //for (int i = 0; i < theLines.size(); i++){
+             myLines.add(aLine);   // not "append!" 
+        }
     }
 
 } // class TextyText

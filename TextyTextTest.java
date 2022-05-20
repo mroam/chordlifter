@@ -65,7 +65,7 @@ public class TextyTextTest
     */
 
     @Test
-    public void split()
+    public void line()
     {
         TextyText txtOne = new TextyText("line1/nline2/nline3");
         assertEquals("line1/nline2/nline3", txtOne.getText());
