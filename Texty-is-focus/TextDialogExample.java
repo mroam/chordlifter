@@ -17,15 +17,15 @@ import javafx.event.EventHandler;
 import java.util.Optional;
 
 /**
+ * Working for BlueJ and IntelliJ, May 2022, on macos 12.4
  * From
  * <a href="https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/</a>
  */
-public class TextDialogExample
-        extends Application {
+public class TextDialogExample   extends Application {
 
     private TextInputDialog dialog;
     private Text actionStatus;
-    private final String defaultVal = "Default text";
+    private final String defaultVal = "line1/nline2";
     private static final String titleTxt = "JavaFX Dialogs Example";
 
     public static void main(String [] args) {
@@ -98,4 +98,4 @@ public class TextDialogExample
             displayTextDialog();
         }
     }
-}
+} // class TextDialogExample

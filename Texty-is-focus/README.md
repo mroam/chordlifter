@@ -8,23 +8,27 @@ versions of a song.
 
 VERSION or DATE: 2022 May 20
 
-HOW TO START THIS PROJECT: Run tests! Works in intelliJ & BlueJ
+HOW TO START THIS PROJECT: Run tests! Works in intelliJ & BlueJ. 
+To see the TextDialogExample 
+
+-- in BlueJ, right click TextDialogExample & "Run JavaFX Application" 
+(the "new TextDialogExample" doesn't seem to work May 2022).
+
+-- In IntelliJ tell the terminal: java TextDialogExample
 
 AUTHORS: Mike, with ideas from Cole, Sadie, Jia, Max, & Desi
 
 USER INSTRUCTIONS: Current focus is trying to get TextyText to be like
-LiveCode's string handling: figuring "word" and "item" and "line"
+LiveCode's string handling so we can ask for "word" I, or "item" J, or "line" K.
 
 
 # TODO:
 
-[ ] Use bluej's example of file reader for TextyText.getTextFromFile( )
+[ ] Use Bluej's example of file reader for TextyText.getTextFromFile( )
 
-[ ] Build more tests of TextyText (and stop using the one that does dialogs?)
+[ ] Build more tests of TextyText for "word" and "char"
 
-[ ] Make tests of "word" "line" and "char"
-
-[ ] Block setText( ) so it doesn't take just anything
+[ ] Block setText( ) so it only accepts legit ("" but not null?) Strings.
 
 [ ] Turn [wanna-be-tests](https://github.com/mroam/chordlifter/blob/main/wanna-be-tests.txt) into real tests!
 
