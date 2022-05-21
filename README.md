@@ -55,9 +55,9 @@ LiveCode's string handling so we can ask for "word" I, or "item" J, or "line" K.
 and didn't stick it to Chord class until I told blueJ to make its own ChordTest. 
 BlueJ squawked about it existing already, and moved the intelliJ test into position.
 * IntelliJ doesn't import as much for its tests, and has to specify longer prefixes.
-* To see the TextDialogExample...
-* * in BlueJ, right click TextDialogExample & "Run JavaFX Application" (the "new TextDialogExample" doesn't seem to work May 2022).
-* * IntelliJ has stopped compiling it (javac TextDialogExample.java) but BlueJ can compile it. It used to work to tell the IntelliJ's terminal: java TextDialogExample
+* To see the TextDialogExamples (there are separate directories for the BlueJ and IntelliJ versions.
+* * When running BlueJ, right click TextDialogExample & "Run JavaFX Application" (the "new TextDialogExample" doesn't seem to work May 2022).
+* * When running IntelliJ, can use its terminal to `javac TextDialogExample.java` and  `java TextDialogExample`
 
 # References
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
