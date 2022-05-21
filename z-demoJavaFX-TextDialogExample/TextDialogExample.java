@@ -17,7 +17,7 @@ import javafx.event.EventHandler;
 import java.util.Optional;
 
 /**
- * Working for BlueJ and IntelliJ, May 2022, on macos 12.4
+ * Working for BlueJ (and IntelliJ for a while), May 2022, on macos 12.4
  * From
  * <a href="https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">
  * https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/</a>
