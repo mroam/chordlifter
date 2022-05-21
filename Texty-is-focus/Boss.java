@@ -29,4 +29,26 @@ public class Boss
             System.out.println(s);
         }
     }
-}
+
+    /**
+     * Has companion method which uses default " "
+     */
+    public static String spaces(int howMany, char mySpaceChar)
+    {
+        String mySpaces = new String();
+        // StringBuilder would be better, or StringBuffer if we need thread safety
+        for (int i = 0; i < howMany; ++i) {
+            mySpaces += mySpaceChar;  
+        }
+        return mySpaces;
+    }
+    
+    /**
+     * Has companion method which is told uses default " "
+     */
+    public static String spaces(int howMany )
+    {
+        return spaces(howMany, ' ');
+    }
+
+} // class Boss

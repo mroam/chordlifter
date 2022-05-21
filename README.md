@@ -29,11 +29,13 @@ LiveCode's string handling so we can ask for "word" I, or "item" J, or "line" K.
 
 [ ] Block setText( ) so it only accepts legit ("" but not null?) Strings.
 
-[ ] Turn [wanna-be-tests](https://github.com/mroam/chordlifter/blob/main/wanna-be-tests.txt) into real tests!
+[ ] Turn [wanna-be-tests](https://github.com/mroam/chordlifter/blob/main/wanna-be-tests.txt) into real tests! See the starter examples in ChordShifterText.java!
 
 [ ] Consider having separate folders (branches!?) for "starter" and "answer-key" versions.
 
 [ ] Revise example picture and all code to use {Chord} rather than [Chord].
+
+[ ] Maybe TextyText should be StringChomper with static commands for String disassembly.
 
 
 # Ideas
