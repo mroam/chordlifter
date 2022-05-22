@@ -21,12 +21,14 @@ public class TextyText {
     // maybe a java.util.ArrayList<String> would be better?
 
     /**
-     * Constructor for objects of class TextyText
+     * Constructor for objects of class TextyText.
+     * This constructor without arguments uses a placeholder "empty text"
      */
     public TextyText() {
         myText = "empty text";
         myLines.add("empty text");
-        /* myLines = new String[]{"empty text"};*/
+        /* alternative: array String[]  instead of ArrayList<String>
+           myLines = new String[]{"empty text"}; */
         /* Note: various array initializations:
         String[] myStringArray = new String[3];
         String[] myStringArray = {"a", "b", "c"};
@@ -77,7 +79,6 @@ public class TextyText {
      https://www.geeksforgeeks.org/javafx-textinputdialog/
      and reference
      https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html
-
 
      had to
      import javafx.scene.control.*
@@ -148,11 +149,26 @@ public class TextyText {
      * "word" is anything between spaces. What about dog-food"
      * Eg "hi there".word(0) returns "hi"
      */
-    public String word(int y)
+    public String getWord(int y)
+    {
+        System.out.println("getChar() doesn't work yet");
+        return "yoiks";
+    }
+    
+    
+    /**
+     * returns the (y+1)th char of our text. 
+     * "char" is any character. Hmmm, what about unicode?
+     * Eg "hi there".char(1) returns "h"
+     */
+    public String getChar(int y)
     {
         // put your code here
-        return "zoiks";
+        System.out.println("getChar() doesn't work yet");
+        return "m";
     }
+    
+    
 
     /**
      * Returns one of the lines of myText.
