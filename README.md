@@ -19,7 +19,7 @@ USER INSTRUCTIONS: Currently working on making [TextyText.java](https://github.c
 
 # TODO:
 
-[ ] Build more tests of TextyText for "word" and "char"
+[ ] Build tougher tests of TextyText for "getWord" and "getChar"
 
 [ ] Maybe TextyText should be StringChomper with static commands for String disassembly.
 
@@ -30,7 +30,6 @@ USER INSTRUCTIONS: Currently working on making [TextyText.java](https://github.c
 [ ] Consider having separate folders (branches!?) for "starter" and "answer-key" versions.
 
 [ ] Revise example picture and all code to use {Chord} rather than [Chord].
-
 
 [ ] See [openfjx info](https://openjfx.io/openjfx-docs/) which suggests finding JavaFX libraries and use IntelliJ's file:projectStructure:Library to tell IntelliJ where javafx libs live. See [stackoverflow article re javafx](https://stackoverflow.com/questions/35974003/javafx-comes-with-jdk-8) which explains that java8 came with javafx but java 11+ don't and need the openjfx install mentioned above. (IntelliJ wants jdk 11 or 17 for JavaFX. BlueJ is running JavaFX (8 probably) in my chordlifter but IntelliJ isn't. IntelliJ was able to make a new project in different folder  "demoJavaFX" which runs and acquired its own javaFX (11+?) from somewhere.)
 
@@ -58,6 +57,8 @@ BlueJ squawked about it existing already, and moved the intelliJ test into posit
 * To see the TextDialogExamples (there are separate directories for the BlueJ and IntelliJ versions.
 * * When running BlueJ, right click TextDialogExample & "Run JavaFX Application" (the "new TextDialogExample" doesn't seem to work May 2022).
 * * When running IntelliJ, can use its terminal to `javac TextDialogExample.java` and  `java TextDialogExample`.
+* IntelliJ new Project on new install has option to download java 18 (other versions avail) and wants to put it into ~/Library/Java/JavaVirtualMachines/openjdk-18.0.1.1
+* IntelliJ: new Java files should go into the "src" folder, else "Run" has trouble finding them.
 
 # References
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
