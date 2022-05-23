@@ -1,9 +1,11 @@
-import javafx.scene.control.*;    // for TextInputDialog
-import java.io.*;       // for BufferedReader
+// import javafx.scene.control.*;    // for TextInputDialog
+
+import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
-import javax.swing.*;  // or import javax.swing.JOptionPane;
 
 /**
  * A String with some special tricks to let us practice.
@@ -73,12 +75,13 @@ public class TextyText {
         this.setText(bunchaWords);
     }
 
-    /** based upon code in
-    https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/
+    /**
+     * based upon code in
+     <a href="https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">...</a>
      and
-     https://www.geeksforgeeks.org/javafx-textinputdialog/
+     <a href="https://www.geeksforgeeks.org/javafx-textinputdialog/">...</a>
      and reference
-     https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html
+     <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html">...</a>
 
      had to
      import javafx.scene.control.*
