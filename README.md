@@ -19,8 +19,6 @@ USER INSTRUCTIONS: Currently working on making [TextyText.java](https://github.c
 
 # TODO:
 
-[ ] Build tougher tests of TextyText for "getWord" and "getChar"
-
 [ ] Maybe TextyText should be StringChomper with static commands for String disassembly.
 
 [ ] Block setText( ) so it only accepts legit ("" but not null?) Strings.
