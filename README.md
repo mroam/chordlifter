@@ -19,7 +19,7 @@ USER INSTRUCTIONS: Currently working on making [TextyText.java](https://github.c
 
 # TODO:
 
-[ ] Maybe TextyText should be StringChomper with static commands for String disassembly.
+[ ] Maybe SuperString should be StringChomper with static commands for String disassembly.
 
 [ ] Block setText( ) so it only accepts legit ("" but not null?) Strings.
 
@@ -33,6 +33,7 @@ USER INSTRUCTIONS: Currently working on making [TextyText.java](https://github.c
 
 [ ] Use Bluej's example of file reader for TextyText.getTextFromFile( )
 
+# History/DidDo see [done](https://github.com/mroam/chordlifter/blob/main/proj-history/done.md)
 
 # Ideas, Things to add
 * Possible implementation of symbol table: keys & values (with hashmap)
