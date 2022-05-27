@@ -58,6 +58,9 @@ BlueJ squawked about it existing already, and moved the intelliJ test into posit
 * * When running IntelliJ, can use its terminal to `javac TextDialogExample.java` and  `java TextDialogExample`.
 * IntelliJ new Project on new install has option to download java 18 (other versions avail) and wants to put it into ~/Library/Java/JavaVirtualMachines/openjdk-18.0.1.1
 * IntelliJ: new Java files should go into the "src" folder, else "Run" has trouble finding them.
+* IntelliJ: community edition can become education by merely adding the EduTools Plugin.
+* IntelliJ: reasonable package com.michaelroam.hellomilton;  // we should put it top of all interactors
+* IntelliJ: nice "sout" code completion gives System.out.println("") with cursor inside quotes!
 
 # References
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
