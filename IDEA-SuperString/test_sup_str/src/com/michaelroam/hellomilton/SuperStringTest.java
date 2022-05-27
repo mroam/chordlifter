@@ -14,7 +14,14 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author  Mike Roam
  * @version 2022 May 27
  *
- * New IntelliJ proj, w/o sample code.
+ * New IntelliJ proj, w/o sample code. Using Java 11 & JUnit 5.
+ * As suggested in intro
+ * https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html#write-code
+ * I've given this a package (com.michaelroam...
+ * And have been able to compile, run Hello, and run SuperStringTest.
+ * Has been told how to make JARS and has a run configuration to do so.
+ *
+ *
  *
  * Note: https://www.jetbrains.com/help/idea/testing.html#add-testing-libraries
  * has info about manually adding junit
