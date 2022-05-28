@@ -6,7 +6,7 @@ For musicians: project to adjust song lyrics (text files) so that chords can be 
 Compare "[Flat](../main/project-desc/survive-simple-flat.txt)" 
 vs "[Lifted](../main/project-desc/survive-simple-lifted.txt)" 
 versions of a song. 
-[See inverted picture](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.png) 
+[See inverted picture](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.jpg) 
 
 VERSION or DATE: 2022 May 21
 
