@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="not-add-sample-code:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/not_add_sample_code_jar</output-path>
-    <root id="archive" name="not-add-sample-code.jar">
-      <element id="module-output" name="supstr_lifter_mod" />
-    </root>
-  </artifact>
-</component>
