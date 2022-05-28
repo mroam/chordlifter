@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * Alternative approach to consider: make a string manipulator that receives Strings.
  *
  * @author Mike Roam
- * @version 2022e.May26
+ * @version 2022e.May27
  */
 public class SuperString {
     private String myText = null;  // can be multi-line, e.g.  "lineOne\nlineTwo" beware OBOB!
@@ -80,14 +80,14 @@ public class SuperString {
 
     /**
      * based upon code in
-    <a href="https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">...</a>
-    and
-    <a href="https://www.geeksforgeeks.org/javafx-textinputdialog/">...</a>
-    and reference
-    <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html">...</a>
+     <a href="https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">...</a>
+     and
+     <a href="https://www.geeksforgeeks.org/javafx-textinputdialog/">...</a>
+     and reference
+     <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html">...</a>
 
-    had to
-    import javafx.scene.control.*
+     had to
+     import javafx.scene.control.*
      */
     public void askJavaFXUserForText() {
         /* Don't run this yet, gets "Error: uninitialized .."
