@@ -6,15 +6,15 @@ For musicians: project to adjust song lyrics (text files) so that chords can be 
 Compare "[Flat](../main/project-desc/survive-simple-flat.txt)" 
 vs "[Lifted](../main/project-desc/survive-simple-lifted.txt)" 
 versions of a song. 
-[See inverted picture](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.jpg) 
+Here's [color inversion of the picture above](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.jpg) 
 
-VERSION or DATE: 2022 May
+# VERSION or DATE: 2022 May
 
-HOW TO START THIS PROJECT: Run tests! They work in IntelliJ (green arrows) & BlueJ ("Run Tests").
+# HOW TO START THIS PROJECT: Run tests! They work in IntelliJ (green arrows) & BlueJ ("Run Tests").
 
-AUTHORS: Mike, with ideas from Cole, Sadie, Jia, Max, & Desi.
+## AUTHORS: Mike, with ideas from Cole, Sadie, Jia, Max, & Desi.
 
-USER INSTRUCTIONS: Currently working on making [SuperString.java](https://github.com/mroam/chordlifter/blob/main/project1-superstring/SuperString.java) string handling so we can ask for "word" I, or "item" J, or "line" K. We can also ask to getNextChord (or getNextLyric) and we can build a new SuperString from the results of chopFirstChord (or chopFirstLyric).
+# USER INSTRUCTIONS: Currently working on making [SuperString.java](https://github.com/mroam/chordlifter/blob/main/project1-superstring/SuperString.java)'s string handling so we can ask for "word" I, or "item" J, or "line" K of a SuperString. We can also ask to getNextChord (or getNextLyric) of it, and we can build a new SuperString from the results of chopFirstChord (or chopFirstLyric).
 
 
 # TODO:
