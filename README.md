@@ -8,13 +8,13 @@ vs "[Lifted](../main/project-desc/survive-simple-lifted.txt)"
 versions of a song. 
 [See inverted picture](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.jpg) 
 
-VERSION or DATE: 2022 May 21
+VERSION or DATE: 2022 May
 
 HOW TO START THIS PROJECT: Run tests! They work in IntelliJ (green arrows) & BlueJ ("Run Tests").
 
-AUTHORS: Mike, with ideas from Cole, Sadie, Jia, Max, & Desi
+AUTHORS: Mike, with ideas from Cole, Sadie, Jia, Max, & Desi.
 
-USER INSTRUCTIONS: Currently working on making [TextyText.java](https://github.com/mroam/chordlifter/blob/main/Texty-is-focus/TextyText.java) string handling so we can ask for "word" I, or "item" J, or "line" K.
+USER INSTRUCTIONS: Currently working on making [SuperString.java](https://github.com/mroam/chordlifter/blob/main/project1-superstring/SuperString.java) string handling so we can ask for "word" I, or "item" J, or "line" K. We can also ask to getNextChord (or getNextLyric) and we can build a new SuperString from the results of chopFirstChord (or chopFirstLyric).
 
 
 # TODO:
@@ -64,4 +64,5 @@ BlueJ squawked about it existing already, and moved the intelliJ test into posit
 
 # References
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* 
+* [BlueJ IDE for Java & Stride](https://www.bluej.org) is cool in visual display of Classes, Tests, and interactive instances.
+* [IDEA IntelliJ IDE for Java & others](https://www.jetbrains.com/help/idea/getting-started.html)'s starter & overview info.
