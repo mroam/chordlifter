@@ -1,3 +1,7 @@
+// should I be like intelliJ in starting all my nearby java programs with
+// package com.michaelroam.hellomilton;
+// or will that require me to put the files into a /com/michaelroam/hellomilton
+// hierarchy like intelliJ does??
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
@@ -8,7 +12,26 @@ import org.junit.jupiter.api.Test;
  * The test class SuperStringTest.
  *
  * @author  Mike Roam
- * @version 2022 May 19
+ * @version 2022 May 27
+ *		
+ * New IntelliJ proj, w/o sample code. Using Java 11 & JUnit 5.		
+ * As suggested in intro		
+ * https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html#write-code		
+ * I've given this a package (com.michaelroam...		
+ * And have been able to compile, run Hello, and run SuperStringTest.		
+ * Has been told how to make JARS and has a run configuration to do so.		
+ *		
+ *		
+ *		
+ * Note: https://www.jetbrains.com/help/idea/testing.html#add-testing-libraries		
+ * has info about manually adding junit		
+ * (I'm trying java 11, and junit 5, pray for me)		
+ *		
+ * If junit isn't found, try IntelliJ's menu:		
+ * File:ProjectStructure:ProjectSettings:Libraries: "+"		
+ * choose fromMaven  (search w/ magnifyingGlass?) for something like		
+ * org.junit.jupiter:junit-jupiter:5.8.2		
+ *
  */
 public class SuperStringTest
 {
@@ -42,6 +65,7 @@ public class SuperStringTest
     @Test
     public void getWord2()
     {
+        // IntelliJ's version is putting com.michaelroam.hellomilton. before all "SuperString" as a courtesy, kludge, or overkill?
         SuperString textyTex1 = new SuperString("Instructions for living a life:\nPay attention.\nBe astonished.\nTell about it.\n --Mary Oliver");
         assertEquals("for", textyTex1.getWord(2));
     }
