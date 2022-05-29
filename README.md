@@ -17,6 +17,11 @@ Here's [color inversion of the picture above](https://github.com/mroam/chordlift
 
 # HOW TO START THIS PROJECT: 
 Run tests! They work in IntelliJ (green arrows) & BlueJ ("Run Tests").
+The IDE's want to open either
+[project1-superstring (folder for blueJ)](https://github.com/mroam/chordlifter/blob/main/project1-superstring/)
+ or 
+[IDEA-SuperString/test_sup_str (folder for intelliJ)](https://github.com/mroam/chordlifter/blob/main/IDEA-SuperString/test_sup_str/)
+ directories.
 
 ------
 
