@@ -48,7 +48,8 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 
 ------
 
-# History/DidDo see [done](https://github.com/mroam/chordlifter/blob/main/proj-history/done.md)
+# History/DidDo 
+See [done](https://github.com/mroam/chordlifter/blob/main/proj-history/done.md) in separate document in [proj-history](https://github.com/mroam/chordlifter/blob/main/proj-history/) directory
 
 ------
 
@@ -58,15 +59,15 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 * MVC!
 * Extra features: search for melody snippets in multiple songs!
 * Kinds of data we could track: who sings which verse, which instruments play which notes.
-* include note hints, e.g. ( c d e fh )
+* Include note hints, e.g. ( c d e fh )
 
 
 ------
 
 # Things to decide: 
-* if {Am Bm} are in one bracket enclosure, is that one "chord" or two???
-* is "never {G}gonna" acceptable or better/worse than "never {G} gonna"??
-* should we always make sure output has at least one space between all "lyric" and "chord" things?
+* If {Am Bm} are in one bracket enclosure, is that one "chord" or two???
+* Is "never {G}gonna" acceptable or better/worse than "never {G} gonna"??
+* Should we always make sure output has at least one space between all "lyric" and "chord" things?
 
 ------
 
