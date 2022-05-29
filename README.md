@@ -6,7 +6,8 @@ For musicians: project to adjust song lyrics (text files) so that chords can be 
 Compare "[Flat](../main/project-desc/survive-simple-flat.txt)" 
 vs "[Lifted](../main/project-desc/survive-simple-lifted.txt)" 
 versions of a song. 
-Here's [color inversion of the picture above](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.jpg) 
+Here's [color inversion of the picture above](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.jpg), 
+which is from "inline chords" document of Mike's google classroom.
 
 ------
 
