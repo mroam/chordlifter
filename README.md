@@ -67,7 +67,7 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 * if {Am Bm} are in one bracket enclosure, is that one "chord" or two???
 * is "never {G}gonna" acceptable or better/worse than "never {G} gonna"??
 * should we always make sure output has at least one space between all "lyric" and "chord" things?
-* 
+
 ------
 
 # Ah-hah! Learning by doing...
@@ -82,7 +82,7 @@ BlueJ squawked about it existing already, and moved the intelliJ test into posit
 * IntelliJ: new Java files should go into the "src" folder, else "Run" has trouble finding them.
 * IntelliJ: community edition can become education by merely adding the EduTools Plugin.
 * IntelliJ: reasonable package com.michaelroam.hellomilton;  // we should put it top of all interactors
-* IntelliJ: nice "sout" code completion gives System.out.println("") with cursor inside quotes!
+* IntelliJ: nice "sout" and "psv" code replace/complete give System.out.println("") with cursor inside quotes! and public static void main(.
 
 ------
 
