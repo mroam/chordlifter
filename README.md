@@ -50,7 +50,7 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 
 [ ] See [openfjx info](https://openjfx.io/openjfx-docs/) which suggests finding JavaFX libraries and use IntelliJ's file:projectStructure:Library to tell IntelliJ where javafx libs live. See [stackoverflow article re javafx](https://stackoverflow.com/questions/35974003/javafx-comes-with-jdk-8) which explains that java8 came with javafx but java 11+ don't and need the openjfx install mentioned above. (IntelliJ wants jdk 11 or 17 for JavaFX. BlueJ is running JavaFX (8 probably) in my chordlifter but IntelliJ isn't. IntelliJ was able to make a new project in different folder  "demoJavaFX" which runs and acquired its own javaFX (11+?) from somewhere.)
 
-[ ] Use Bluej's example of file reader for TextyText.getTextFromFile( )
+[ ] Use Bluej's example of file reader for SuperString.getTextFromFile( )
 
 ------
 
