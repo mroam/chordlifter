@@ -1,6 +1,10 @@
 # chordlifter
 For musicians: project to adjust song lyrics (text files) so that chords can be either within or floating above.
 
+------
+
+#Sample:
+
 ![ChordLifter samples](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples-dark.png "ChordLifter")
 
 Compare "[Flat](../main/project-desc/survive-simple-flat.txt)" 
