@@ -8,14 +8,22 @@ vs "[Lifted](../main/project-desc/survive-simple-lifted.txt)"
 versions of a song. 
 Here's [color inversion of the picture above](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples.jpg) 
 
+------
+
 # VERSION or DATE: 
 2022 May
+
+------
 
 # HOW TO START THIS PROJECT: 
 Run tests! They work in IntelliJ (green arrows) & BlueJ ("Run Tests").
 
+------
+
 ## AUTHORS: 
 Mike, 2021-2, with ideas from Cole, Sadie, Jia, Max, & Desi.
+
+------
 
 # USER INSTRUCTIONS: 
 Currently working on making [SuperString.java](https://github.com/mroam/chordlifter/blob/main/project1-superstring/SuperString.java)'s string handling so we can ask for "word" I, or "item" J, or "line" K of a SuperString. We can also ask to getNextChord (or getNextLyric) of it, and we can build a new SuperString from the results of chopFirstChord (or chopFirstLyric).
@@ -49,9 +57,13 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 * include note hints, e.g. ( c d e fh )
 
 
+------
+
 # Things to decide: 
 * if {Am Bm} are in one bracket enclosure, is that one "chord" or two???
 
+
+------
 
 # Ah-hah! Learning by doing...
 * BlueJ didn't at first run the ChordTest that intelliJ had made,
@@ -66,6 +78,8 @@ BlueJ squawked about it existing already, and moved the intelliJ test into posit
 * IntelliJ: community edition can become education by merely adding the EduTools Plugin.
 * IntelliJ: reasonable package com.michaelroam.hellomilton;  // we should put it top of all interactors
 * IntelliJ: nice "sout" code completion gives System.out.println("") with cursor inside quotes!
+
+------
 
 # References
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
