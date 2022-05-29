@@ -66,7 +66,8 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 # Things to decide: 
 * if {Am Bm} are in one bracket enclosure, is that one "chord" or two???
 * is "never {G}gonna" acceptable or better/worse than "never {G} gonna"??
-
+* should we always make sure output has at least one space between all "lyric" and "chord" things?
+* 
 ------
 
 # Ah-hah! Learning by doing...
