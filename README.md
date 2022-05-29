@@ -102,4 +102,5 @@ BlueJ squawked about it existing already, and moved the intelliJ test into posit
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [BlueJ IDE for Java & Stride](https://www.bluej.org) is cool in visual display of Classes, Tests, and interactive instances.
 * [IDEA IntelliJ IDE for Java & others](https://www.jetbrains.com/help/idea/getting-started.html)'s starter & overview info.
-* [JUnit 5 usrguide](https://junit.org/junit5/docs/current/user-guide/) (Junit 5 has "jupiter", is 1st class on intelliJ, and needs Java8 or better.
+* [JUnit 5 usrguide](https://junit.org/junit5/docs/current/user-guide/) (Junit 5 has "jupiter", is 1st class on intelliJ, and needs Java8 or better.)
+* [Junit 5 API](https://junit.org/junit5/docs/5.0.1/api/) and especially kinds of [Assertions](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html)
