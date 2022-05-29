@@ -3,7 +3,7 @@ For musicians: project to adjust song lyrics (text files) so that chords can be 
 
 ------
 
-#Sample:
+# Samples:
 
 ![ChordLifter samples](https://github.com/mroam/chordlifter/blob/main/project-desc/chordlifter-samples-dark.png "ChordLifter")
 
