@@ -46,7 +46,11 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 
 [ ] Use Bluej's example of file reader for TextyText.getTextFromFile( )
 
+------
+
 # History/DidDo see [done](https://github.com/mroam/chordlifter/blob/main/proj-history/done.md)
+
+------
 
 # Ideas, Things to add
 * Possible implementation of symbol table: keys & values (with hashmap)
