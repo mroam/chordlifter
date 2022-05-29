@@ -90,6 +90,7 @@ BlueJ squawked about it existing already, and moved the intelliJ test into posit
 * IntelliJ: community edition can become education by merely adding the EduTools Plugin.
 * IntelliJ: reasonable package com.michaelroam.hellomilton;  // we should put it top of all interactors
 * IntelliJ: nice "sout" and "psv" code replace/complete give System.out.println("") with cursor inside quotes! and public static void main(.
+* Github iPad app doesn't allow file editing, just reading; use ipad's Safari to go to http://github.com/mroam/chordlifter and EDIT!
 
 ------
 
