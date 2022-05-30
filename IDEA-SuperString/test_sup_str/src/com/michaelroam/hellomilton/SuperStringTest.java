@@ -62,7 +62,8 @@ public class SuperStringTest
     {
     }
 
-    // note: intelliJ's version is spelling out com.michaelroam.chordlifter.SuperString   ... overkill? courtesy? package? scope?
+    // Note: intelliJ's version was spelling out com.michaelroam.chordlifter.SuperString
+    // Was it as... overkill? courtesy? package? scope?
     @Test
     public void getWord2()
     {
