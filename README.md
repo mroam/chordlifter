@@ -40,6 +40,11 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 
 ------
 
+# Dependencies
+junit 4 or 5, java8 or better (import java.util.ArrayList), shared package of SuperString and SuperStringTest.
+
+------
+
 # TODO:
 
 [ ] Maybe SuperString should be StringChomper with static commands for String disassembly.
