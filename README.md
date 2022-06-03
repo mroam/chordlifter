@@ -16,7 +16,7 @@ which is from "inline chords" document of Mike's google classroom.
 ------
 
 # VERSION or DATE: 
-2022 May
+2022f Jun 3
 
 ------
 
@@ -38,6 +38,15 @@ Mike, 2021-2, with ideas from Cole, Sadie, Jia, Max, & Desi.
 # USER INSTRUCTIONS: 
 Currently working on making [SuperString.java](https://github.com/mroam/chordlifter/blob/main/project1-superstring/SuperString.java)'s string handling so we can ask for "word" I, or "item" J, or "line" K of a SuperString. We can also ask to getNextChord (or getNextLyric) of it, and we can build a new SuperString from the results of chopFirstChord (or chopFirstLyric).
 
+# Hints for making SuperString pass its tests:
+See [Java 8 String commands](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) including
+* String.indexOf( ‘k‘  )   // ‘ ‘  and “ “ are both usable
+* String.indexOf( ‘m‘, startAt )   // ‘ ‘  and “ “ are both usable
+* String.substring( )
+* String.isEmpty( )
+* String.length( )  // yes, ( )
+
+
 ------
 
 # Dependencies
@@ -46,6 +55,8 @@ junit 4 or 5, java8 or better (import java.util.ArrayList), shared package of Su
 ------
 
 # TODO:
+
+[ ] SuperStringTest should be sure "" empty strings don't crash out!
 
 [ ] Maybe SuperString should be StringChomper with static commands for String disassembly.
 
@@ -81,7 +92,7 @@ See [done](https://github.com/mroam/chordlifter/blob/main/proj-history/done.md) 
 
 # Things to decide: 
 * If {Am Bm} are in one bracket enclosure, is that one "chord" or two???
-* Is "never {G}gonna" acceptable or better/worse than "never {G} gonna"??
+* Is "never {G}gonna" acceptable or better/worse than "never {G} gonna" in terms of spaces??
 * Should we always make sure output has at least one space between all "lyric" and "chord" things?
 
 ------
