@@ -42,7 +42,7 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 See [Java 8 String commands](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) including
 * String.indexOf( ‘k‘  )   // ‘ ‘  and “ “ are both usable
 * String.indexOf( ‘m‘, startAt )   // ‘ ‘  and “ “ are both usable
-* String.substring( )
+* String.substring( start, endBefore )
 * String.isEmpty( )
 * String.length( )  // yes, ( )
 
@@ -56,7 +56,7 @@ junit 4 or 5, java8 or better (import java.util.ArrayList), shared package of Su
 
 # TODO:
 
-[ ] SuperStringTest should be sure "" empty strings don't crash out!
+[ ] SuperStringTest should be sure null and "" isEmpty( ) strings don't crash out!
 
 [ ] Maybe SuperString should be StringChomper with static commands for String disassembly.
 
