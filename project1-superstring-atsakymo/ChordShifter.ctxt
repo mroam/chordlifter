@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ChordShifter
+comment0.text=\n\ ChordShifter...\ \n\ one\ idea\ is\ this\ knows\ how\ to\ change\ a\ LineWithInternalChords\ into\ a\n\ LineWithLiftedChords,\ and\ vice\ versa.\ Another\ idea\ is\ that\ those\ Line\n\ classes\ know\ how\ to\ convert\ themselves\ into\ each\ other\ (and\ toString,\ too).\n\n\ @author\ Mike\ Roam\n\ @version\ 2022\ May\ 20\n
+comment1.params=
+comment1.target=ChordShifter()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ ChordShifter\n
+comment2.params=myLWLC
+comment2.target=LineWithInternalChords\ flatten(LinesWithLiftedChords)
+comment2.text=\n\ Doesn't\ work\ yet\n
+comment3.params=myLWIC
+comment3.target=LinesWithLiftedChords\ liften(LineWithInternalChords)
+comment3.text=\n\ Doesn't\ work\ yet\n
+numComments=4

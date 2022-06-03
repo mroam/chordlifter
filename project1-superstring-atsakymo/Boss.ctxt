@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Boss
+comment0.text=\n\ "Boss"\ contains\ the\ main(\ )\ for\ chordlifter\n\n\ @author\ Mike\ Roam\n\ @version\ 2022\ May\ 19\n
+comment1.params=
+comment1.target=Boss()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Boss\n
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment2.text=\n\ Note\:\ running\ tests\ is\ also\ a\ good\ thing\ to\ do\ instead\ of\ running\ main\n
+comment3.params=howMany\ mySpaceChar
+comment3.target=java.lang.String\ spaces(int,\ char)
+comment3.text=\n\ Has\ companion\ method\ which\ uses\ default\ "\ "\n
+comment4.params=howMany
+comment4.target=java.lang.String\ spaces(int)
+comment4.text=\n\ Has\ companion\ method\ which\ is\ told\ uses\ default\ "\ "\n
+numComments=5
