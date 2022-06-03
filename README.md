@@ -40,11 +40,11 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 
 # Hints for making SuperString pass its tests:
 See [Java 8 String commands](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) including
-* String.indexOf( ‘k‘  )   // ‘ ‘  and “ “ are both usable
-* String.indexOf( ‘m‘, startAt )   // ‘ ‘  and “ “ are both usable
-* String.substring( start, endBefore )
-* String.isEmpty( )
-* String.length( )  // yes, ( )
+* `String.indexOf( ‘k‘  )`   // ‘ ‘  and “ “ are both usable
+* `String.indexOf( ‘m‘, startAt )`   // ‘ ‘  and “ “ are both usable
+* `String.substring( start, endBefore )`
+* `String.isEmpty( )`
+* `String.length( )`  // yes, ( )
 
 
 ------
