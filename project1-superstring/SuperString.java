@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.regex.*;  // for String.split's exception
 
 /**
  * A String with some special tricks to let us practice.
@@ -14,7 +15,7 @@ import java.util.ArrayList;
  * Alternative approach to consider: make a string manipulator that receives Strings.
  *
  * @author Mike Roam
- * @version 2022e.May27
+ * @version 2022f.Jun03
  */
 public class SuperString {
     private String myText = null;  // can be multi-line, e.g.  "lineOne\nlineTwo" beware OBOB!
@@ -80,14 +81,14 @@ public class SuperString {
 
     /**
      * based upon code in
-     <a href="https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">...</a>
-     and
-     <a href="https://www.geeksforgeeks.org/javafx-textinputdialog/">...</a>
-     and reference
-     <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html">...</a>
+    <a href="https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">...</a>
+    and
+    <a href="https://www.geeksforgeeks.org/javafx-textinputdialog/">...</a>
+    and reference
+    <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html">...</a>
 
-     had to
-     import javafx.scene.control.*
+    had to
+    import javafx.scene.control.*
      */
     public void askJavaFXUserForText() {
         /* Don't run this yet, gets "Error: uninitialized .."
@@ -125,7 +126,7 @@ public class SuperString {
             // System.out.println(currLine);
                 allTheLines.add(currLine);
             myText = allTheLines.toString();  // Is this crazy?
-            myText = String.join("/n", allTheLines);
+            myText = String.join("/n", allTheLines);  // would \\n work better here and other places?
             myLines = allTheLines;  // completely replaces it
 
         } catch (IOException e) {
@@ -152,14 +153,15 @@ public class SuperString {
 
     /**
      * returns the (y+1)th word of our text. 
-     * "word" is anything between spaces. What about dog-food"
+     * "word" is anything between spaces (and linebreaks!) 
+     * Doesn't notice punctuation (e.g. "about dog-food" is two words.
      * Eg "hi there".word(0) returns "hi"
      * 
      * How to do? Hint: check getLine( ) and splitIntoLines( )
      */
     public String getWord(int y)
     {
-        System.out.println("getChar() doesn't work yet");
+        System.out.println("getWord() doesn't work yet");
         return "yoiks";
     }
 
@@ -269,13 +271,13 @@ public class SuperString {
     /**
      * having trouble with \n  so using  '/n' for now?
      * (typing "lineone\nlinetwo" into blueJ runtime for getText() gets
-     * "illegal escape character" message)
+     * "illegal escape character" message). Hmmm, does "lineone\\nlinetwo" work??
      *
      * See
      */
     public void splitIntoLines( )
     {
-        String[] theLines = myText.split( "/n" );
+        String[] theLines = myText.split( "/n" ); // how about "\\n|/n"
         /* if myLines were merely array of String, we'd be done. */
         /* The trick in the next line is the cast. Oops, compiles but doesn't work. See
          * https://beginnersbook.com/2015/05/java-string-to-arraylist-conversion/ */
@@ -287,4 +289,14 @@ public class SuperString {
         }
     }
 
+    /**
+     * 
+     */
+    public String toString( ) {
+        if ( myText == null ) {
+            return "";
+        } else {
+            return myText;
+        }
+    }
 } // class SuperString

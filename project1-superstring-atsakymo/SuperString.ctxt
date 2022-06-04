@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=SuperString
-comment0.text=\n\ A\ String\ with\ some\ special\ tricks\ to\ let\ us\ practice.\n\ Wants\ to\ have\ the\ "line\ i",\ "word\ j",\ and\ "char\ k"\ methods\ of\ LiveCode.\n\ Alternative\ approach\ to\ consider\:\ make\ a\ string\ manipulator\ that\ receives\ Strings.\n\n\ @author\ Mike\ Roam\n\ @version\ 2022e.May27\n
+comment0.text=\n\ A\ String\ with\ some\ special\ tricks\ to\ let\ us\ practice.\n\ Wants\ to\ have\ the\ "line\ i",\ "word\ j",\ and\ "char\ k"\ methods\ of\ LiveCode.\n\ Alternative\ approach\ to\ consider\:\ make\ a\ string\ manipulator\ that\ receives\ Strings.\n\n\ @author\ Mike\ Roam\n\ @version\ 2022f.Jun03\n
 comment1.params=
 comment1.target=SuperString()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ SuperString.\n\ This\ constructor\ without\ arguments\ uses\ a\ placeholder\ "empty\ text"\n
@@ -27,7 +27,10 @@ comment16.target=java.lang.String\ getLine(int)
 comment16.text=\n\ Returns\ one\ of\ the\ lines\ of\ myText.\n\ Let's\ stay\ alert\ to\ counting\ from\ zero\ (by\ Java)\ or\ from\ one\ (me).\n\ e.g.\ "lineOne\\nlineTwo\\nlineThree".getLine(2)\ will\ return\ "lineTwo"\n
 comment17.params=
 comment17.target=void\ splitIntoLines()
-comment17.text=\n\ having\ trouble\ with\ \\n\ \ so\ using\ \ '/n'\ for\ now?\n\ (typing\ "lineone\\nlinetwo"\ into\ blueJ\ runtime\ for\ getText()\ gets\n\ "illegal\ escape\ character"\ message)\n\n\ See\n
+comment17.text=\n\ having\ trouble\ with\ \\n\ \ so\ using\ \ '/n'\ for\ now?\n\ (typing\ "lineone\\nlinetwo"\ into\ blueJ\ runtime\ for\ getText()\ gets\n\ "illegal\ escape\ character"\ message).\ Hmmm,\ does\ "lineone\\\\nlinetwo"\ work??\n\n\ See\n
+comment18.params=
+comment18.target=java.lang.String\ toString()
+comment18.text=\n\ \n
 comment2.params=newText
 comment2.target=SuperString(java.lang.String)
 comment2.text=\n\ Constructor\ for\ objects\ of\ class\ SuperString\n
@@ -42,14 +45,14 @@ comment5.target=void\ askUserForText()
 comment5.text=\n\ Using\ Swing\ JOptionPane\ dialog\ box\n\ (have\ to\ import\ javax.swing.*;\ )\n\ <p>\n\ See\ JavaFX\ example\ below\n
 comment6.params=
 comment6.target=void\ askJavaFXUserForText()
-comment6.text=\n\ based\ upon\ code\ in\n\ \ \ \ \ <a\ href\="https\://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">...</a>\n\ \ \ \ \ and\n\ \ \ \ \ <a\ href\="https\://www.geeksforgeeks.org/javafx-textinputdialog/">...</a>\n\ \ \ \ \ and\ reference\n\ \ \ \ \ <a\ href\="https\://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html">...</a>\n\n\ \ \ \ \ had\ to\n\ \ \ \ \ import\ javafx.scene.control.*\n
+comment6.text=\n\ based\ upon\ code\ in\n\ \ \ \ <a\ href\="https\://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/">...</a>\n\ \ \ \ and\n\ \ \ \ <a\ href\="https\://www.geeksforgeeks.org/javafx-textinputdialog/">...</a>\n\ \ \ \ and\ reference\n\ \ \ \ <a\ href\="https\://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html">...</a>\n\n\ \ \ \ had\ to\n\ \ \ \ import\ javafx.scene.control.*\n
 comment7.params=fileName
 comment7.target=void\ readTextFromFile(java.lang.String)
 comment7.text=\n\ reading\ from\ text\ file\n\ from\n\ https\://stackoverflow.com/questions/37769481/javafx-gui-that-opens-a-text-file-how-to-read-whats-in-text-file-and-edit-save\n\n\ has\ to\ \ \ \ import\ java.io.*\ \ \ \ \ and\ java.util.ArrayList\n
 comment8.params=y
 comment8.target=java.lang.String\ getWord(int)
-comment8.text=\n\ returns\ the\ (y+1)th\ word\ of\ our\ text.\ \n\ "word"\ is\ anything\ between\ spaces.\ What\ about\ dog-food"\n\ Eg\ "hi\ there".word(0)\ returns\ "hi"\n\ \n\ How\ to\ do?\ Hint\:\ check\ getLine(\ )\ and\ splitIntoLines(\ )\n
+comment8.text=\n\ returns\ the\ (y+1)th\ word\ of\ our\ text.\ \n\ "word"\ is\ anything\ between\ spaces\ (and\ linebreaks\!)\ \n\ Doesn't\ notice\ punctuation\ (e.g.\ "about\ dog-food"\ is\ two\ words.\n\ Eg\ "hi\ there".word(0)\ returns\ "hi"\n\ \n\ How\ to\ do?\ Hint\:\ check\ getLine(\ )\ and\ splitIntoLines(\ )\n
 comment9.params=i
 comment9.target=java.lang.String\ getChar(int)
 comment9.text=\n\ returns\ the\ (y+1)th\ char\ of\ our\ text.\ \ Watch\ and\ test\ for\ OBOBs\!\n\ "char"\ is\ any\ character.\ Hmmm,\ what\ about\ unicode?\n\ Eg\ "hi\ there".char(1)\ returns\ "h"\n\ Note\:\ I'm\ using\ String\ rather\ than\ char\ or\ Character,\ so\ I\ can\ use\ my\ \n\ \ \ \ fake\ wrongslash\ /n\ linebreaks\!\n\ Hint\:\ See\ String\ in\ API\:\n\ <a\ href\="https\://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html"\n\ \ \ \ https\://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html</a>\n\ Hint\:\ check\ String.charAt(int\ i)\ \ \ \ which\ also\ work\ for\ unicode,\ see\ CodePointAt\ for\ details\n
-numComments=18
+numComments=19

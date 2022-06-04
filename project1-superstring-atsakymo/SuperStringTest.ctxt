@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=SuperStringTest
-comment0.text=\n\ The\ test\ class\ SuperStringTest.\n\n\ @author\ \ Mike\ Roam\n\ @version\ 2022\ May\ 29\n\n\ If\ junit\ isn't\ found,\ try\ IntelliJ's\ menu\:\t\t\n\ File\:ProjectStructure\:ProjectSettings\:Libraries\:\ "+"\t\t\n\ choose\ fromMaven\ \ (search\ w/\ magnifyingGlass?)\ for\ something\ like\t\t\n\ org.junit.jupiter\:junit-jupiter\:5.8.2\t\t\n\n
+comment0.text=\n\ The\ test\ class\ SuperStringTest.\n\n\ @author\ \ Mike\ Roam\n\ @version\ 2022\ May\ 29\n\ \n\ Starting\ Mike's\ DIY,\ getFirstLyric(\ )\ is\ working.\n\ ??\ Do\ the\ tests\ worry\ sufficiently\ about\ null\ and\ ""\ strings??\ \ TODO\n\n\ If\ junit\ isn't\ found,\ try\ IntelliJ's\ menu\:\ \ \ \ \ \ \ \ \n\ File\:ProjectStructure\:ProjectSettings\:Libraries\:\ "+"\ \ \ \ \ \ \ \ \n\ choose\ fromMaven\ \ (search\ w/\ magnifyingGlass?)\ for\ something\ like\ \ \ \ \ \ \ \ \n\ org.junit.jupiter\:junit-jupiter\:5.8.2\ \ \ \ \ \ \ \ \n\n
 comment1.params=
 comment1.target=SuperStringTest()
 comment1.text=\n\ Default\ constructor\ for\ test\ class\ SuperStringTest\n

@@ -293,21 +293,85 @@ public class SuperStringTest
     @Test
     public void getWord()
     {
-        // given:
-        SuperString supstr = new SuperString("word1 word2  word.3");
+       // given:
+        SuperString supstr = new SuperString("");
+                
+        // do:
+        String actual = supstr.getWord( -2 );
+        
+        // then 
+        String expected = "";
+        assertEquals(expected, actual);
+        // =======
 
         // do:
-        String actual = supstr.getWord(-1);
-
-        // check:
-        String expected = "";
+        actual = supstr.getWord( 0 );
+        
+        // then 
+        expected = "";
+        assertEquals(expected, actual);
+        // =======
+        
+        // given:
+        supstr = new SuperString("Instructions for living a life:\nPay attention.\nBe astonished.\nTell about it.\n --Mary Oliver");
+                
+        // do:
+        actual = supstr.getWord( -2 );
+        
+        // then 
+        expected = "";
+        assertEquals(expected, actual);
+        // =======
+        
+        // do:
+        actual = supstr.getWord( 0 );
+        
+        // then 
+        expected = "";
+        assertEquals(expected, actual);
+        // =======
+        
+        // do:
+        actual = supstr.getWord( 2 );
+        
+        // then 
+        expected = "for";
+        assertEquals(expected, actual);
+        
+        // =======
+        
+        // do:
+        actual = supstr.getWord( 6 );
+        
+        // then 
+        expected = "Pay";
+        assertEquals(expected, actual);
+        
+        // =======
+        
+        // do:
+        actual = supstr.getWord( 200 );
+        
+        // then 
+        expected = "";
+        assertEquals(expected, actual);
+        
+        
+        // given:
+        supstr = new SuperString("word1 word2  word.3");
+                
+        // do:
+        actual = supstr.getWord(-1);
+        
+        // check: 
+        expected = "";
         assertEquals(expected, actual);
 
         // more tests, compressed, (not spelling out 'actual', 'expected').
         assertEquals("", supstr.getWord(0));
-        assertEquals("wordl", supstr.getWord(1));
+        assertEquals("word1", supstr.getWord(1));
         assertEquals("word2", supstr.getWord(2));
-        assertEquals("word.3", supstr.getWord(2));
+        assertEquals("word.3", supstr.getWord(3));
         assertEquals("", supstr.getWord(10));
     }
 

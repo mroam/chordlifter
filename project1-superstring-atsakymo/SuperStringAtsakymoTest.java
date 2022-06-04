@@ -53,7 +53,7 @@ public class SuperStringAtsakymoTest
     {
     }
 
-    // note: intelliJ's version is spelling out com.michaelroam.chordlifter.SuperStringAtsakymo   ... overkill? courtesy? package? scope?
+    // // note: intelliJ's version is spelling out com.michaelroam.chordlifter.SuperStringAtsakymo   ... overkill? courtesy? package? scope?
     @Test
     public void getWord2()
     {        
@@ -81,7 +81,8 @@ public class SuperStringAtsakymoTest
         String expected = "yoi" + "ks";
         assertEquals(expected, actual);
     }
-
+    
+    
     @Test
     public void getChord()
     {
@@ -284,20 +285,84 @@ public class SuperStringAtsakymoTest
     public void getWord()
     {
         // given:
-        SuperStringAtsakymo supstr = new SuperStringAtsakymo("word1 word2  word.3");
+        SuperStringAtsakymo supstr = new SuperStringAtsakymo("");
                 
         // do:
-        String actual = supstr.getWord(-1);
+        String actual = supstr.getWord( -2 );
+        
+        // then 
+        String expected = "";
+        assertEquals(expected, actual);
+        // =======
+
+        // do:
+        actual = supstr.getWord( 0 );
+        
+        // then 
+        expected = "";
+        assertEquals(expected, actual);
+        // =======
+        
+        // given:
+        supstr = new SuperStringAtsakymo("Instructions for living a life:\nPay attention.\nBe astonished.\nTell about it.\n --Mary Oliver");
+                
+        // do:
+        actual = supstr.getWord( -2 );
+        
+        // then 
+        expected = "";
+        assertEquals(expected, actual);
+        // =======
+        
+        // do:
+        actual = supstr.getWord( 0 );
+        
+        // then 
+        expected = "";
+        assertEquals(expected, actual);
+        // =======
+        
+        // do:
+        actual = supstr.getWord( 2 );
+        
+        // then 
+        expected = "for";
+        assertEquals(expected, actual);
+        
+        // =======
+        
+        // do:
+        actual = supstr.getWord( 6 );
+        
+        // then 
+        expected = "Pay";
+        assertEquals(expected, actual);
+        
+        // =======
+        
+        // do:
+        actual = supstr.getWord( 200 );
+        
+        // then 
+        expected = "";
+        assertEquals(expected, actual);
+        
+        
+        // given:
+        supstr = new SuperStringAtsakymo("word1 word2  word.3");
+                
+        // do:
+        actual = supstr.getWord(-1);
         
         // check: 
-        String expected = "";
+        expected = "";
         assertEquals(expected, actual);
 
         // more tests, compressed, (not spelling out 'actual', 'expected').
         assertEquals("", supstr.getWord(0));
-        assertEquals("wordl", supstr.getWord(1));
+        assertEquals("word1", supstr.getWord(1));
         assertEquals("word2", supstr.getWord(2));
-        assertEquals("word.3", supstr.getWord(2));
+        assertEquals("word.3", supstr.getWord(3));
         assertEquals("", supstr.getWord(10));
     }
 

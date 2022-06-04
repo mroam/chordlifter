@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.regex.*;  // for String.split( regex
 
 /**
  * A String with some special tricks to let us practice.
@@ -125,7 +126,7 @@ public class SuperStringAtsakymo {
             // System.out.println(currLine);
                 allTheLines.add(currLine);
             myText = allTheLines.toString();  // Is this crazy?
-            myText = String.join("/n", allTheLines);
+            myText = String.join("/n", allTheLines);  // would \\n work better here and other places?
             myLines = allTheLines;  // completely replaces it
 
         } catch (IOException e) {
@@ -152,15 +153,47 @@ public class SuperStringAtsakymo {
 
     /**
      * returns the (y+1)th word of our text. 
-     * "word" is anything between spaces. What about dog-food"
+     * "word" is anything between spaces (and linebreaks!) 
+     * Doesn't notice punctuation (e.g. "about dog-food" is two words.
      * Eg "hi there".word(0) returns "hi"
      * 
      * How to do? Hint: check getLine( ) and splitIntoLines( )
      */
     public String getWord(int y)
     {
-        System.out.println("getChar() doesn't work yet");
-        return "yoiks";
+        if (y <= 0) {
+            System.err.println("not cool asking to getWord(" + y + ") from " + this.toString() );
+            return "";
+        }
+        int whichLine = 0;  // unlike Java, I'm counting lines 1..n instead of 0..(n-1)
+        int wordsSoFar = 0;
+        String wordY = null;
+        do {
+            whichLine++;
+            if (whichLine > myLines.size()) { // we don't have that many words!
+                return "";
+            }
+            String currLine = getLine( whichLine ); // myLines.get(whichLine - 1);
+            String[ ] wordsOfLine ;  // size unspecified until split; out here for scope
+            try {
+                wordsOfLine = currLine.split( "\\s+" );
+            } catch (PatternSyntaxException PSExceptn) {
+                System.err.println("bad grep expression \\s+");
+                return "";
+            }
+            int howManyWordsInThisLine = wordsOfLine.length;  // no () for [array]?
+            if (( y >= wordsSoFar) && (y <= (wordsSoFar + howManyWordsInThisLine)) ) {
+                // Suppose we're looking for y==8th word and each line has 3 words.
+                // When whichLine  == 3, wordsSoFar = 6; 
+                // the word wanted is word (y-wordsSoFar) (- 1 !!) of wordsOfLine[ ]
+                return wordsOfLine[ (y - wordsSoFar - 1 ) ];
+            }
+            wordsSoFar += howManyWordsInThisLine;
+        } while ( y < wordsSoFar );
+        return "";  // uh-oh, not found.
+
+        //System.out.println("getWord() doesn't work yet");
+        //return "yoiks";
     }
 
     /**
@@ -281,13 +314,13 @@ public class SuperStringAtsakymo {
     /**
      * having trouble with \n  so using  '/n' for now?
      * (typing "lineone\nlinetwo" into blueJ runtime for getText() gets
-     * "illegal escape character" message)
+     * "illegal escape character" message). Hmmm, does "lineone\\nlinetwo" work??
      *
      * See
      */
     public void splitIntoLines( )
     {
-        String[] theLines = myText.split( "/n" );
+        String[] theLines = myText.split( "/n" ); // how about "\\n|/n"
         /* if myLines were merely array of String, we'd be done. */
         /* The trick in the next line is the cast. Oops, compiles but doesn't work. See
          * https://beginnersbook.com/2015/05/java-string-to-arraylist-conversion/ */
@@ -299,4 +332,14 @@ public class SuperStringAtsakymo {
         }
     }
 
+    /**
+     * 
+     */
+    public String toString( ) {
+        if ( myText == null ) {
+            return "";
+        } else {
+            return myText;
+        }
+    }
 } // class SuperStringAtsakymo
