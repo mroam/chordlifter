@@ -1,43 +1,42 @@
-don’t start now
-note: needs fixed pitch font!
 
+Don’t start now
+
+Note: needs fixed pitch font!
+
+See music theory analysis of it by at jazz pianist Charles Cornell at https://youtu.be/8P_aHhHk5Kk
 ^Bm                      ^D       ^Em   pause
 ,   If you don’t want to see me..
 
 <verse 1> Did a full one-
 ^Em     ^Bm.   ^G                      ^D           A
 eighty, crazy, Thinking bout the way I was. Did the heartbreak
-^Em        ^Bm.       G                     D       A
+^Em        ^Bm        ^G                     D       ^A
 change me? Maybe, But look at where I ended up..
 
 </verse1>
 
 <pre chorus> I'm all
 ^Em.                   ^Bm                     ^G                   ^D   A
-good already, So moved on, it's scary. I'm not where you left me at all, so
-Bm                   D                       Em      G
-If you don’t want to see me dancin’ with somebody 
+good already, So moved on, it's scary. I'm not where you left me at all, so if you
+Bm            D                       Em      G
+don’t want to see me dancin’ with somebody 
 Bm             D                         Em       G
 If you wanna believe that anything could stop me
 
 </prechorus>
 
 <chorus> Don't show
-^Em              ^ Bm
-up,   Don't come out.  Don't start
-G               D    A
-caring about me now.   Walk a-
-^Em            Bm
--way, you know how. Don't start
-G               D        pause
-caring about me now.
+^Em              ^ Bm              G               D    A
+up,   Don't come out.  Don't start caring about me now.   Walk a-
+^Em            Bm               G               D        pause
+-way, you know how. Don't start caring about me now.
 
 </chorus>
 
 <verse2> Aren't you the 
-^Em.    Bm       G                          D.             A
+^Em.    Bm       G                          D              A
 guy who Tried to hurt me with the word "goodbye"? 'Fore it took some 
-Em      Bm.              G                   D     A
+Em      Bm               G                   D     A
 time to survive you. I'm better on the other side..
 
 </verse2>
