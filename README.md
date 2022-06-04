@@ -45,7 +45,7 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 * [`String.substring( start, endBefore )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#substring-int-int-)
 * [`String.isEmpty( )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#isEmpty--)
 * [`String.length( )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#length--)  // yes, ( )
-* [`String.split( "\s" )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-)
+* [`String.split( "\s" )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-) needs import java.util.regex.*;
 * [`String.split( "\s", 0 )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-int-) // better, avoids empty trailing substrings
 
 ## See [Java 8 ArrayList info](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
