@@ -39,13 +39,13 @@ Mike, 2021-2, with ideas from Cole, Sadie, Jia, Max, & Desi.
 Currently working on making [SuperString.java](https://github.com/mroam/chordlifter/blob/main/project1-superstring/SuperString.java)'s string handling so we can ask for "word" I, or "item" J, or "line" K of a SuperString. We can also ask to getNextChord (or getNextLyric) of it, and we can build a new SuperString from the results of chopFirstChord (or chopFirstLyric).
 
 # Hints for making SuperString pass its tests:
-See [Java 8 String commands](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) including
+## See [Java 8 String commands](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) including
 * [`String.indexOf( ‘k‘  )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-int-)   // ‘ ‘  and “ “ are both usable
 * [`String.indexOf( ‘m‘, startAt )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-int-int-)   // ‘ ‘  and “ “ are both usable
 * [`String.substring( start, endBefore )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#substring-int-int-)
 * [`String.isEmpty( )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#isEmpty--)
 * [`String.length( )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#length--)  // yes, ( )
-* [String.split( "\s" )](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-)
+* [`String.split( "\s" )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-)
 
 
 ------
