@@ -40,17 +40,20 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 
 # Hints for making SuperString pass its tests:
 See [Java 8 String commands](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) including
-* `String.indexOf( ‘k‘  )`   // ‘ ‘  and “ “ are both usable
-* `String.indexOf( ‘m‘, startAt )`   // ‘ ‘  and “ “ are both usable
-* `String.substring( start, endBefore )`
-* `String.isEmpty( )`
-* `String.length( )`  // yes, ( )
+* [`String.indexOf( ‘k‘  )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-int-)   // ‘ ‘  and “ “ are both usable
+* [`String.indexOf( ‘m‘, startAt )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-int-int-)   // ‘ ‘  and “ “ are both usable
+* [`String.substring( start, endBefore )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#substring-int-int-)
+* [`String.isEmpty( )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#isEmpty--)
+* [`String.length( )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#length--)  // yes, ( )
+* [String.split( "\s" )](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-)
 
 
 ------
 
 # Dependencies
-junit 4 or 5, java8 or better (import java.util.ArrayList), shared package of SuperString and SuperStringTest.
+* [junit](https://junit.org/junit5/) 4 or 5,
+* java8 or better (import java.util.ArrayList),
+* shared package of SuperString and SuperStringTest.
 
 ------
 
