@@ -23,6 +23,30 @@ import org.junit.jupiter.api.Test;
  * org.junit.jupiter:junit-jupiter:5.8.2        
  *
  */
+
+
+// should I be like intelliJ in starting all my nearby java programs with
+// package com.michaelroam.hellomilton;
+// or will that require me to put the files into a /com/michaelroam/hellomilton
+// hierarchy like intelliJ does??
+
+
+/**
+ * The test class SuperStringTest.
+ *
+ * @author  Mike Roam
+ * @version 2022f Jun 03
+ * 
+ * Starting Mike's DIY, getLeadingLyric( ) is working.
+ * ?? Do the tests worry sufficiently about null and "" strings??  TODO
+ * 
+ *
+ * If junit isn't found, try IntelliJ's menu:        
+ * File:ProjectStructure:ProjectSettings:Libraries: "+"        
+ * choose fromMaven  (search w/ magnifyingGlass?) for something like        
+ * org.junit.jupiter:junit-jupiter:5.8.2        
+ *
+ */
 public class SuperStringTest
 {
     /**
@@ -52,16 +76,16 @@ public class SuperStringTest
     {
     }
 
-    // note: intelliJ's version is spelling out com.michaelroam.chordlifter.SuperString   ... overkill? courtesy? package? scope?
+    // // note: intelliJ's version is spelling out com.michaelroam.chordlifter.SuperString   ... overkill? courtesy? package? scope?
     @Test
     public void getWord2()
     {        
         // given:
         SuperString supstr = new SuperString("Instructions for living a life:\nPay attention.\nBe astonished.\nTell about it.\n --Mary Oliver");
-        
+
         // do:
         String actual = supstr.getWord( 2 );
-        
+
         // then 
         String expected = "for";
         assertEquals(expected, actual);
@@ -72,86 +96,120 @@ public class SuperStringTest
     {
         // given:
         SuperString supstr = new SuperString("Instructions for living a life:\nPay attention.\nBe astonished.\nTell about it.\n --Mary Oliver");
-                
+
         // do:
         String actual = supstr.getWord( 2 );
-        
+
         // then 
         String expected = "yoi" + "ks";
         assertEquals(expected, actual);
     }
 
+    /**
+     * 
+     */
     @Test
-    public void getChord()
+    public void beginsWithChord( ) {
+        // given:
+        SuperString supstr = new SuperString("{F G Em Am} /n {F}We're no strangers to {G}love.");
+        assertTrue(supstr.beginsWithChord( ) );
+        supstr = new SuperString("");
+        assertFalse(supstr.beginsWithChord( ) );
+        supstr = new SuperString(" {F G Em Am} /n {F}We're no strangers to {G}love."); // <== has leading blank
+        assertTrue(supstr.beginsWithChord( ) );
+        supstr = new SuperString("We're no strangers to {G}love.");
+        assertFalse(supstr.beginsWithChord( ) );
+    }
+
+    
+    /**
+     * testing the getChord( i )
+     */
+    @Test
+    public void getChordI()
     {
         // given:
         SuperString supstr = new SuperString("{F G Em Am} /n {F}We're no strangers to {G}love.");
-                
+
         // do:
-        String actual = supstr.getChord( 1 );
-        
-        // then 
-        String expected = "{F}";
+        String actual = supstr.getChord( -1 );
+
+        // then
+        String expected = "";
         assertEquals(expected, actual);
+        // more tests, compressed
+        assertEquals("", supstr.getChord( 0 ) );
+        assertEquals("{F G Em Am}", supstr.getChord( 1 ) );
+        assertEquals("{F}", supstr.getChord( 2 ) );
+        assertEquals("{G}", supstr.getChord( 3 ) );
+        assertEquals("", supstr.getChord( 4 ) );
     }
-    
+
+    /**
+     * I guess this should be able to handle leading space " {F}" but NOT anything else
+     */
     @Test
-    public void getFirstChord( )
+    public void getLeadingChord( )
     {
         // given:
         SuperString supstr = new SuperString("{F}You know the rules and {G}so do I");
-                
+
         // do:
-        String actual = supstr.getFirstChord( );
-        
+        String actual = supstr.getLeadingChord( );
+
         // check:
         String expected = "{F}";
         assertEquals(expected, actual);
+        // more tests, compressed
+        supstr = new SuperString(" {F G F}You know the rules and {G}so do I");
+        assertEquals(" {F G F}", supstr.getLeadingChord() );  // keep leading space?? Probably.
+        // supstr = new SuperString(" You know the rules and {G}so do I");
+        // assertEquals("", supstr.getLeadingChord);
     }
-    
+
     @Test
-    public void chopFirstChord( )
+    public void chopLeadingChord( )
     {
         // given:
         SuperString supstr = new SuperString("{F}A full commitment's what I'm {G}thinking of");
-                
+
         // do:
-        String actual = supstr.chopFirstChord( );
-        
+        String actual = supstr.chopLeadingChord( );
+
         // check: 
         String expected = "A full commitment's what I'm {G}thinking of";
         assertEquals(expected, actual);
     }
-    
+
     @Test
-    public void getFirstLyric( )
+    public void getLeadingLyric( )
     {
         // given:
         SuperString supstr = new SuperString("Never gonna {F}give you {G}up, Never gonna {Em}let you {Am}down");
         // interesting: keep the space after "gonna" or NOT? What if it were deliberately two spaces??
-        
+
         // do:
-        String actual = supstr.getFirstLyric( );
-        
+        String actual = supstr.getLeadingLyric( );
+
         // check: 
-        String expected = "Never gonna";
+        String expected = "Never gonna ";
         assertEquals(expected, actual);
     }
-    
+
     @Test
-    public void chopFirstLyric( )
+    public void chopLeadingLyric( )
     {
         // given:
         SuperString supstr = new SuperString("Never gonna r{F}un a{G}round and d{E}esert{Am} you");
-                
+
         // do:
-        String actual = supstr.chopFirstLyric( );
-        
+        String actual = supstr.chopLeadingLyric( );
+
         // check: 
         String expected = "{F}un a{G}round and d{E}esert{Am} you";
         assertEquals(expected, actual);
     }
-    
+
     /*     * * * Silly to test this unless we know what the user is going to insert. Need to mock up!
     @Test
     public void userText()
@@ -180,13 +238,13 @@ public class SuperStringTest
          * IF we also have a static getLine( TextText myStr, int i )  THEN we could notice null
          * and return "".
          */
-        
+
         // given:
         // SuperString txtOne = null;
-                
+
         // do:
         // String actual = supstr.getLine(-1);
-        
+
         // check: 
         // String expected = "";
         // assertEquals(expected, actual);
@@ -199,10 +257,10 @@ public class SuperStringTest
         // let's try empty but constructed. (non-arg constructor makes "<empty text>" !)
         // given:
         SuperString supstr = new SuperString( ); // can it survive?
-                
+
         // do:
         String actual = supstr.getLine(-1);
-        
+
         // check: 
         String expected = "";
         assertEquals(expected, actual);
@@ -284,10 +342,10 @@ public class SuperStringTest
     {
         // given:
         SuperString supstr = new SuperString("");
-                
+
         // do:
         String actual = supstr.getWord( -2 );
-        
+
         // then 
         String expected = "";
         assertEquals(expected, actual);
@@ -295,63 +353,62 @@ public class SuperStringTest
 
         // do:
         actual = supstr.getWord( 0 );
-        
+
         // then 
         expected = "";
         assertEquals(expected, actual);
         // =======
-        
+
         // given:
         supstr = new SuperString("Instructions for living a life:\nPay attention.\nBe astonished.\nTell about it.\n --Mary Oliver");
-                
+
         // do:
         actual = supstr.getWord( -2 );
-        
+
         // then 
         expected = "";
         assertEquals(expected, actual);
         // =======
-        
+
         // do:
         actual = supstr.getWord( 0 );
-        
+
         // then 
         expected = "";
         assertEquals(expected, actual);
         // =======
-        
+
         // do:
         actual = supstr.getWord( 2 );
-        
+
         // then 
         expected = "for";
         assertEquals(expected, actual);
-        
+
         // =======
-        
+
         // do:
         actual = supstr.getWord( 6 );
-        
+
         // then 
         expected = "Pay";
         assertEquals(expected, actual);
-        
+
         // =======
-        
+
         // do:
         actual = supstr.getWord( 200 );
-        
+
         // then 
         expected = "";
         assertEquals(expected, actual);
-        
-        
+
         // given:
         supstr = new SuperString("word1 word2  word.3");
-                
+
         // do:
         actual = supstr.getWord(-1);
-        
+
         // check: 
         expected = "";
         assertEquals(expected, actual);
@@ -373,10 +430,10 @@ public class SuperStringTest
     {
         // given:
         SuperString supstr = new SuperString("line1");
-                
+
         // do:
         String actual = supstr.getChar(-1);
-        
+
         // check: 
         String expected = "";
         assertEquals(expected, actual);
@@ -388,3 +445,4 @@ public class SuperStringTest
         assertEquals("", supstr.getChar(10));
     }
 } // class SuperStringTest
+

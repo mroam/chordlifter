@@ -52,17 +52,26 @@ public class SuperStringAtsakymo {
 
     /**
      * setter
+     * what if newText is null? Planning to put in "";
      */
     public void setText(String newText) {
-        myText = newText;
-        this.splitIntoLines();
+        if (newText == null) {
+            myText = "";
+        } else {
+            myText = newText;
+            this.splitIntoLines();
+        }
     }
 
     /**
      * getter
      */
     public String getText() {
+        if (myText == null) {
+            return "";
+        } else {
         return myText;
+    }
     }
 
     /**
@@ -76,7 +85,7 @@ public class SuperStringAtsakymo {
         JOptionPane.showMessageDialog(null, "Hi!");
 
         String bunchaWords = JOptionPane.showInputDialog("Please give me words");
-        this.setText(bunchaWords);
+        this.setText(bunchaWords);   // might be empty or null
     }
 
     /**
@@ -156,14 +165,19 @@ public class SuperStringAtsakymo {
      * "word" is anything between spaces (and linebreaks!) 
      * Doesn't notice punctuation (e.g. "about dog-food" is two words.
      * Eg "hi there".word(0) returns "hi"
+     * Hmmm, would be handy if negative worked back from the end like python & livecode! TODO
      * 
      * How to do? Hint: check getLine( ) and splitIntoLines( )
      */
     public String getWord(int y)
     {
-        if (y <= 0) {
-            System.err.println("not cool asking to getWord(" + y + ") from " + this.toString() );
+        if ((myText == null) || (myText == "")) {
             return "";
+        }
+        if (y <= 0) {
+            System.err.println("not cool asking to getWord( /* nonpositive */" + y + ") from \"" + this.toString() + "\"");
+            return "";
+            // Hmmm, would be handy if negative worked back from the end like python & livecode! TODO
         }
         int whichLine = 0;  // unlike Java, I'm counting lines 1..n instead of 0..(n-1)
         int wordsSoFar = 0;
@@ -200,6 +214,9 @@ public class SuperStringAtsakymo {
      * returns the (y+1)th char of our text.  Watch and test for OBOBs!
      * "char" is any character. Hmmm, what about unicode?
      * Eg "hi there".char(1) returns "h"
+     * 
+     * Hmmm, would be handy if negative worked back from the end like python & livecode! TODO
+     * 
      * Note: I'm using String rather than char or Character, so I can use my 
     fake wrongslash /n linebreaks!
      * Hint: See String in API:
@@ -209,6 +226,14 @@ public class SuperStringAtsakymo {
      */
     public String getChar(int i)
     {
+        if ((myText == null) || (myText == "")) {
+            return "";
+        }
+        if (i <= 0) {
+            System.err.println("not cool asking to getChar( /* nonpositive */" + i + ") from \"" + this.toString() + "\"");
+            return "";
+            // Hmmm, would be handy if negative worked back from the end like python & livecode! TODO     
+        }
         // put your code here
         System.out.println("getChar() doesn't work yet");
         return "m";
@@ -216,21 +241,39 @@ public class SuperStringAtsakymo {
 
     /**
      * find chord i, starting count at ONE so watch & test for OBOBs.
+     * 
+     * Hmmm, would be handy if negative worked back from the end like python & livecode! TODO 
      */
     public String getChord(int i) {
+        if ((myText == null) || (myText == "")) {
+            return "";
+        }
+        if (i <= 0) {
+            System.err.println("not cool asking to getChord( /* nonpositive */" + i + ") from \"" + this.toString() + "\"");
+            return "";
+            // Hmmm, would be handy if negative worked back from the end like python & livecode! TODO     
+        }
         // put your code here
         System.out.println("getChord(i) doesn't work yet");
         return "{Gm}";
     }
 
     /**
-     * Would we want to number the chords? 
-     * If so, this could (when written) find the char offset into the string of chord number I
-     * Or not bother, instead while processing just keep pulling off first lyrics & first chord?
+     * Would we want to number the chords? Beware, I'm using -1 for not found.
+     * If so, this could (when written) find the char offset into the string of chord number i
+     * Or not bother, instead while processing just keep pulling off Leading lyrics & Leading chord?
      * If we cached all chords AND their locations we could later get their locations again,
      * but does anybody need that?
      */
     public int indexOfChord(int i) {
+        if ((myText == null) || (myText == "")) {   // alternatively  myText.isEmpty() 
+            return -1;
+        }
+        if (i <= 0) {
+            System.err.println("not cool asking to getChord( /* nonpositive */" + i + ") from \"" + this.toString() + "\"");
+            return -1;
+            // Hmmm, would be handy if negative worked back from the end like python & livecode! TODO     
+        }
         //can say "String.indexOf( "{Gm}") but hoow do we find loc of second or third Gm?
         System.out.println("indexOfChord(i) doesn't work yet");
         return 5;
@@ -239,8 +282,12 @@ public class SuperStringAtsakymo {
     /**
      * Should be "" if current info is starting with a chord?
      * Could alternatively be a static method which both receives and returns Strings. (Receive SuperStringAtsakymo??)
+     * 
+     * "Did a full one-{Em}-eighty, {Bm} crazy, {G} Thinking 'bout the way I was"
+     * should return "Did a full one-" with the hyphen
+     * While "{G} Don't show {Em} up, Don't come {Bm} out. {G D A}" 
      */    
-    String getFirstLyric( ) {
+    String getLeadingLyric( ) {
         if (myText == null) {
             return "";
         }
@@ -253,19 +300,32 @@ public class SuperStringAtsakymo {
         } else {
             return myText.substring(0,whereChordStarts);
         }
-        // System.out.println("getFirstLyric( ) doesn't work yet");
+        // System.out.println("getLeadingLyric( ) doesn't work yet");
         // return "Temp";
     }
 
     /**
      * Handy song manipulation, does NOT mess with this.myText( )
      * Could alternatively be a static method which both receives and returns Strings. (Receive SuperStringAtsakymo??)
+     * e.g. "
      */
-    String chopFirstLyric( ) {
+    String chopLeadingLyric( ) {
         String after = null;
-        System.out.println("chopFirstLyric( ) doesn't work yet");
+        System.out.println("chopLeadingLyric( ) doesn't work yet");
         after = "Temp";
         return after;
+    }
+
+    /**
+     * Should have a grammar to specify that " {Gm}" counts as beginsWithChord despite white space
+     *
+     * 
+     */
+    public boolean beginsWithChord( )
+    {
+        // put your code here
+        System.out.println("beginsWithChord( ) doesn't work yet");
+        return false;
     }
 
     /**
@@ -273,8 +333,8 @@ public class SuperStringAtsakymo {
      * Might return "{F G Em Am}  or {F}
      * Could alternatively be a static method which both receives and returns Strings. (Receive SuperStringAtsakymo??)
      */    
-    String getFirstChord( ) {
-        System.out.println("getFirstChord( ) doesn't work yet");
+    String getLeadingChord( ) {
+        System.out.println("getLeadingChord( ) doesn't work yet");
         return "Temp";
     }
 
@@ -282,9 +342,9 @@ public class SuperStringAtsakymo {
      * Handy song manipulation, does NOT mess with this.myText( )
      * Could alternatively be a static method which both receives and returns Strings. (Receive SuperStringAtsakymo??)
      */
-    String chopFirstChord( ) {
+    String chopLeadingChord( ) {
         String after = null;
-        System.out.println("chopFirstLyric( ) doesn't work yet");
+        System.out.println("chopLeadingLyric( ) doesn't work yet");
         after = "Temp";
         return after;
     }

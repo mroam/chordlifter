@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  * @author  Mike Roam
  * @version 2022f Jun 03
  * 
- * Starting Mike's DIY, getFirstLyric( ) is working.
+ * Starting Mike's DIY, getLeadingLyric( ) is working.
  * ?? Do the tests worry sufficiently about null and "" strings??  TODO
  * 
  *
@@ -59,10 +59,10 @@ public class SuperStringAtsakymoTest
     {        
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo("Instructions for living a life:\nPay attention.\nBe astonished.\nTell about it.\n --Mary Oliver");
-        
+
         // do:
         String actual = supstr.getWord( 2 );
-        
+
         // then 
         String expected = "for";
         assertEquals(expected, actual);
@@ -73,87 +73,120 @@ public class SuperStringAtsakymoTest
     {
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo("Instructions for living a life:\nPay attention.\nBe astonished.\nTell about it.\n --Mary Oliver");
-                
+
         // do:
         String actual = supstr.getWord( 2 );
-        
+
         // then 
         String expected = "yoi" + "ks";
         assertEquals(expected, actual);
     }
-    
-    
+
+    /**
+     * 
+     */
     @Test
-    public void getChord()
+    public void beginsWithChord( ) {
+        // given:
+        SuperStringAtsakymo supstr = new SuperStringAtsakymo("{F G Em Am} /n {F}We're no strangers to {G}love.");
+        assertTrue(supstr.beginsWithChord( ) );
+        supstr = new SuperStringAtsakymo("");
+        assertFalse(supstr.beginsWithChord( ) );
+        supstr = new SuperStringAtsakymo(" {F G Em Am} /n {F}We're no strangers to {G}love."); // <== has leading blank
+        assertTrue(supstr.beginsWithChord( ) );
+        supstr = new SuperStringAtsakymo("We're no strangers to {G}love.");
+        assertFalse(supstr.beginsWithChord( ) );
+    }
+
+    
+    /**
+     * testing the getChord( i )
+     */
+    @Test
+    public void getChordI()
     {
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo("{F G Em Am} /n {F}We're no strangers to {G}love.");
-                
+
         // do:
-        String actual = supstr.getChord( 1 );
-        
-        // then 
-        String expected = "{F}";
+        String actual = supstr.getChord( -1 );
+
+        // then
+        String expected = "";
         assertEquals(expected, actual);
+        // more tests, compressed
+        assertEquals("", supstr.getChord( 0 ) );
+        assertEquals("{F G Em Am}", supstr.getChord( 1 ) );
+        assertEquals("{F}", supstr.getChord( 2 ) );
+        assertEquals("{G}", supstr.getChord( 3 ) );
+        assertEquals("", supstr.getChord( 4 ) );
     }
-    
+
+    /**
+     * I guess this should be able to handle leading space " {F}" but NOT anything else
+     */
     @Test
-    public void getFirstChord( )
+    public void getLeadingChord( )
     {
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo("{F}You know the rules and {G}so do I");
-                
+
         // do:
-        String actual = supstr.getFirstChord( );
-        
+        String actual = supstr.getLeadingChord( );
+
         // check:
         String expected = "{F}";
         assertEquals(expected, actual);
+        // more tests, compressed
+        supstr = new SuperStringAtsakymo(" {F G F}You know the rules and {G}so do I");
+        assertEquals(" {F G F}", supstr.getLeadingChord() );  // keep leading space?? Probably.
+        // supstr = new SuperStringAtsakymo(" You know the rules and {G}so do I");
+        // assertEquals("", supstr.getLeadingChord);
     }
-    
+
     @Test
-    public void chopFirstChord( )
+    public void chopLeadingChord( )
     {
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo("{F}A full commitment's what I'm {G}thinking of");
-                
+
         // do:
-        String actual = supstr.chopFirstChord( );
-        
+        String actual = supstr.chopLeadingChord( );
+
         // check: 
         String expected = "A full commitment's what I'm {G}thinking of";
         assertEquals(expected, actual);
     }
-    
+
     @Test
-    public void getFirstLyric( )
+    public void getLeadingLyric( )
     {
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo("Never gonna {F}give you {G}up, Never gonna {Em}let you {Am}down");
         // interesting: keep the space after "gonna" or NOT? What if it were deliberately two spaces??
-        
+
         // do:
-        String actual = supstr.getFirstLyric( );
-        
+        String actual = supstr.getLeadingLyric( );
+
         // check: 
         String expected = "Never gonna ";
         assertEquals(expected, actual);
     }
-    
+
     @Test
-    public void chopFirstLyric( )
+    public void chopLeadingLyric( )
     {
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo("Never gonna r{F}un a{G}round and d{E}esert{Am} you");
-                
+
         // do:
-        String actual = supstr.chopFirstLyric( );
-        
+        String actual = supstr.chopLeadingLyric( );
+
         // check: 
         String expected = "{F}un a{G}round and d{E}esert{Am} you";
         assertEquals(expected, actual);
     }
-    
+
     /*     * * * Silly to test this unless we know what the user is going to insert. Need to mock up!
     @Test
     public void userText()
@@ -182,13 +215,13 @@ public class SuperStringAtsakymoTest
          * IF we also have a static getLine( TextText myStr, int i )  THEN we could notice null
          * and return "".
          */
-        
+
         // given:
         // SuperStringAtsakymo txtOne = null;
-                
+
         // do:
         // String actual = supstr.getLine(-1);
-        
+
         // check: 
         // String expected = "";
         // assertEquals(expected, actual);
@@ -201,10 +234,10 @@ public class SuperStringAtsakymoTest
         // let's try empty but constructed. (non-arg constructor makes "<empty text>" !)
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo( ); // can it survive?
-                
+
         // do:
         String actual = supstr.getLine(-1);
-        
+
         // check: 
         String expected = "";
         assertEquals(expected, actual);
@@ -286,10 +319,10 @@ public class SuperStringAtsakymoTest
     {
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo("");
-                
+
         // do:
         String actual = supstr.getWord( -2 );
-        
+
         // then 
         String expected = "";
         assertEquals(expected, actual);
@@ -297,63 +330,62 @@ public class SuperStringAtsakymoTest
 
         // do:
         actual = supstr.getWord( 0 );
-        
+
         // then 
         expected = "";
         assertEquals(expected, actual);
         // =======
-        
+
         // given:
         supstr = new SuperStringAtsakymo("Instructions for living a life:\nPay attention.\nBe astonished.\nTell about it.\n --Mary Oliver");
-                
+
         // do:
         actual = supstr.getWord( -2 );
-        
+
         // then 
         expected = "";
         assertEquals(expected, actual);
         // =======
-        
+
         // do:
         actual = supstr.getWord( 0 );
-        
+
         // then 
         expected = "";
         assertEquals(expected, actual);
         // =======
-        
+
         // do:
         actual = supstr.getWord( 2 );
-        
+
         // then 
         expected = "for";
         assertEquals(expected, actual);
-        
+
         // =======
-        
+
         // do:
         actual = supstr.getWord( 6 );
-        
+
         // then 
         expected = "Pay";
         assertEquals(expected, actual);
-        
+
         // =======
-        
+
         // do:
         actual = supstr.getWord( 200 );
-        
+
         // then 
         expected = "";
         assertEquals(expected, actual);
-        
-        
+
         // given:
         supstr = new SuperStringAtsakymo("word1 word2  word.3");
-                
+
         // do:
         actual = supstr.getWord(-1);
-        
+
         // check: 
         expected = "";
         assertEquals(expected, actual);
@@ -375,10 +407,10 @@ public class SuperStringAtsakymoTest
     {
         // given:
         SuperStringAtsakymo supstr = new SuperStringAtsakymo("line1");
-                
+
         // do:
         String actual = supstr.getChar(-1);
-        
+
         // check: 
         String expected = "";
         assertEquals(expected, actual);

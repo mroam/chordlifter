@@ -14,6 +14,8 @@ import java.util.regex.*;  // for String.split's exception
  * Wants to have the "line i", "word j", and "char k" methods of LiveCode.
  * Alternative approach to consider: make a string manipulator that receives Strings.
  *
+ * Beware: SuperStringAtsakymo might have better functions & signatures
+ *
  * @author Mike Roam
  * @version 2022f.Jun03
  */
@@ -209,8 +211,8 @@ public class SuperString {
      * Should be "" if current info is starting with a chord?
      * Could alternatively be a static method which both receives and returns Strings. (Receive SuperString??)
      */    
-    String getFirstLyric( ) {
-        System.out.println("getFirstLyric( ) doesn't work yet");
+    String getLeadingLyric( ) {
+        System.out.println("getLeadingLyric( ) doesn't work yet");
         return "Temp";
     }
 
@@ -218,20 +220,32 @@ public class SuperString {
      * Handy song manipulation, does NOT mess with this.myText( )
      * Could alternatively be a static method which both receives and returns Strings. (Receive SuperString??)
      */
-    String chopFirstLyric( ) {
+    String chopLeadingLyric( ) {
         String after = null;
-        System.out.println("chopFirstLyric( ) doesn't work yet");
+        System.out.println("chopLeadingLyric( ) doesn't work yet");
         after = "Temp";
         return after;
     }
 
     /**
+     * Should have a grammar to specify that " {Gm}" counts as beginsWithChord despite white space
+     *
+     * 
+     */
+    public boolean beginsWithChord( )
+    {
+        // put your code here
+        System.out.println("beginsWithChord( ) doesn't work yet");
+        return false;
+    }
+    
+    /**
      * Should be "" if current info is starting with a lyric?
      * Might return "{F G Em Am}  or {F}
      * Could alternatively be a static method which both receives and returns Strings. (Receive SuperString??)
      */    
-    String getFirstChord( ) {
-        System.out.println("getFirstChord( ) doesn't work yet");
+    String getLeadingChord( ) {
+        System.out.println("getLeadingChord( ) doesn't work yet");
         return "Temp";
     }
 
@@ -239,9 +253,9 @@ public class SuperString {
      * Handy song manipulation, does NOT mess with this.myText( )
      * Could alternatively be a static method which both receives and returns Strings. (Receive SuperString??)
      */
-    String chopFirstChord( ) {
+    String chopLeadingChord( ) {
         String after = null;
-        System.out.println("chopFirstLyric( ) doesn't work yet");
+        System.out.println("chopLeadingLyric( ) doesn't work yet");
         after = "Temp";
         return after;
     }
