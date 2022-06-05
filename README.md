@@ -47,6 +47,7 @@ Currently working on making [SuperString.java](https://github.com/mroam/chordlif
 * [`String.length( )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#length--)  // yes, ( )
 * [`String.split( "\s" )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-) needs import java.util.regex.*;
 * [`String.split( "\s", 0 )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-int-) // better, avoids empty trailing substrings
+* [`String.trim( )`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#trim--)  // removes all of any blank space before & after!
 
 ## See [Java 8 ArrayList info](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
 

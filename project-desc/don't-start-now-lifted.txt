@@ -12,8 +12,8 @@ See "How to play the bassline" at https://youtu.be/iSmRR_yhY_M
 ,   If you don’t want to see me..
 
 <verse 1> Did a full one-
-^Em     ^Bm.   ^G                      ^D           A
-eighty, crazy, Thinking bout the way I was. Did the heartbreak
+^Em     ^Bm.   ^G                       ^D           A
+eighty, crazy, Thinking 'bout the way I was. Did the heartbreak
 ^Em        ^Bm        ^G                     D       ^A
 change me? Maybe, But look at where I ended up..
 
@@ -30,7 +30,7 @@ If you wanna believe that anything could stop me
 </prechorus>
 
 <chorus> Don't show
-^Em              ^ Bm              G               D    A
+^Em              ^Bm               G               D    A
 up,   Don't come out.  Don't start caring about me now.   Walk a-
 ^Em            Bm               G               D        pause
 -way, you know how. Don't start caring about me now.
@@ -39,7 +39,7 @@ up,   Don't come out.  Don't start caring about me now.   Walk a-
 
 <verse2> Aren't you the 
 ^Em.    Bm       G                          D              A
-guy who Tried to hurt me with the word "goodbye"? 'Fore it took some 
+guy who tried to hurt me with the word "goodbye"? 'Fore it took some 
 Em      Bm               G                   D     A
 time to survive you. I'm better on the other side..
 
@@ -50,20 +50,10 @@ time to survive you. I'm better on the other side..
 <again chorus />
 
 <bridge>
-Em
-(whoa, whoa)
-Bm
-Don’t come out (Out, out)
-G
-(Don't show up) (whoa, whoa)
-D           A
-Don't start now (Oh)
-Em
-(whoa, whoa)
-Bm
-Don't come out (Out, out)
-        G                    D    A
-I'm not where you left me at all, so.
+Em           Bm                        G                            D           A
+(whoa, whoa) Don’t come out (Out, out) (Don't show up) (whoa, whoa) Don't start now (Oh)
+Em           Bm                                G                    D    A
+(whoa, whoa) Don't come out (Out, out) I'm not where you left me at all, so.
 Bm                   D                       Em    G
 If you don’t want to see me dancin’ with somebody 
 Bm             D                         Em       G
