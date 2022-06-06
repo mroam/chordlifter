@@ -12,6 +12,8 @@ based on Kyle Dencker's "BlueJ- Getting Started with JFrames"
  
  Still todo: get mouse clicks working and try to include
  Mike's TicTacToe 3D in a double-clickable jar!
+ See Tutorial <a href="https://openjfx.io/openjfx-docs/">
+      https://openjfx.io/openjfx-docs/</a>
  
  Should I be aiming at Swing (w/ JFrame) or JavaFX?
 <a href="https://careerkarma.com/blog/javafx-vs-java-swing/">
